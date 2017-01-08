@@ -1,0 +1,16 @@
+angular.module('home').
+service('homeService',function($http){
+    var flip = function(){
+        return "fliper";
+    };
+
+    var inititate = function(){
+        return "initiater";
+    };
+
+    return {
+        flip:flip,
+        
+        inititate:inititate
+    };
+});

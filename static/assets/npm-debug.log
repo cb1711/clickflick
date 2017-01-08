@@ -1,0 +1,1728 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json Frontend@1.0.0 No description
+5 warn package.json Frontend@1.0.0 No repository field.
+6 warn package.json Frontend@1.0.0 No README data
+7 verbose install where, deps [ '/home/aakash/Projects/NodeJS Projects/Switch/static/assets',
+7 verbose install   [ 'angular',
+7 verbose install     'angular-ui-router',
+7 verbose install     'angular-material',
+7 verbose install     'angular-animate',
+7 verbose install     'angular-aria' ] ]
+8 verbose install where, peers [ '/home/aakash/Projects/NodeJS Projects/Switch/static/assets',
+8 verbose install   [] ]
+9 info preinstall Frontend@1.0.0
+10 silly cache add args [ 'angular@^1.4.7', null ]
+11 verbose cache add spec angular@^1.4.7
+12 silly cache add args [ 'angular-ui-router@latest', null ]
+13 verbose cache add spec angular-ui-router@latest
+14 silly cache add parsed spec { raw: 'angular@^1.4.7',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'angular',
+14 silly cache add   rawSpec: '^1.4.7',
+14 silly cache add   spec: '>=1.4.7 <2.0.0',
+14 silly cache add   type: 'range' }
+15 verbose addNamed angular@>=1.4.7 <2.0.0
+16 silly addNamed semver.valid null
+17 silly addNamed semver.validRange >=1.4.7 <2.0.0
+18 silly addNameRange { name: 'angular', range: '>=1.4.7 <2.0.0', hasData: false }
+19 silly mapToRegistry name angular
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/angular
+23 verbose addNameRange registry:https://registry.npmjs.org/angular not in flight; fetching
+24 silly cache add args [ 'angular-material@~1.1.0', null ]
+25 verbose cache add spec angular-material@~1.1.0
+26 silly cache add parsed spec { raw: 'angular-material@~1.1.0',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'angular-material',
+26 silly cache add   rawSpec: '~1.1.0',
+26 silly cache add   spec: '>=1.1.0 <1.2.0',
+26 silly cache add   type: 'range' }
+27 verbose addNamed angular-material@>=1.1.0 <1.2.0
+28 silly addNamed semver.valid null
+29 silly addNamed semver.validRange >=1.1.0 <1.2.0
+30 silly addNameRange { name: 'angular-material',
+30 silly addNameRange   range: '>=1.1.0 <1.2.0',
+30 silly addNameRange   hasData: false }
+31 silly mapToRegistry name angular-material
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/angular-material
+35 verbose addNameRange registry:https://registry.npmjs.org/angular-material not in flight; fetching
+36 silly cache add args [ 'angular-animate@latest', null ]
+37 verbose cache add spec angular-animate@latest
+38 silly cache add args [ 'angular-aria@latest', null ]
+39 verbose cache add spec angular-aria@latest
+40 silly cache add parsed spec { raw: 'angular-ui-router@latest',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'angular-ui-router',
+40 silly cache add   rawSpec: 'latest',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 verbose addNamed angular-ui-router@latest
+42 silly addNamed semver.valid null
+43 silly addNamed semver.validRange null
+44 info addNameTag [ 'angular-ui-router', 'latest' ]
+45 silly mapToRegistry name angular-ui-router
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry uri https://registry.npmjs.org/angular-ui-router
+49 verbose addNameTag registry:https://registry.npmjs.org/angular-ui-router not in flight; fetching
+50 silly cache add parsed spec { raw: 'angular-animate@latest',
+50 silly cache add   scope: null,
+50 silly cache add   name: 'angular-animate',
+50 silly cache add   rawSpec: 'latest',
+50 silly cache add   spec: 'latest',
+50 silly cache add   type: 'tag' }
+51 verbose addNamed angular-animate@latest
+52 silly addNamed semver.valid null
+53 silly addNamed semver.validRange null
+54 info addNameTag [ 'angular-animate', 'latest' ]
+55 silly mapToRegistry name angular-animate
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry uri https://registry.npmjs.org/angular-animate
+59 verbose addNameTag registry:https://registry.npmjs.org/angular-animate not in flight; fetching
+60 silly cache add parsed spec { raw: 'angular-aria@latest',
+60 silly cache add   scope: null,
+60 silly cache add   name: 'angular-aria',
+60 silly cache add   rawSpec: 'latest',
+60 silly cache add   spec: 'latest',
+60 silly cache add   type: 'tag' }
+61 verbose addNamed angular-aria@latest
+62 silly addNamed semver.valid null
+63 silly addNamed semver.validRange null
+64 info addNameTag [ 'angular-aria', 'latest' ]
+65 silly mapToRegistry name angular-aria
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry uri https://registry.npmjs.org/angular-aria
+69 verbose addNameTag registry:https://registry.npmjs.org/angular-aria not in flight; fetching
+70 verbose request uri https://registry.npmjs.org/angular-animate
+71 verbose request no auth needed
+72 info attempt registry request try #1 at 10:49:45 AM
+73 verbose request id dad5df844fb4ea7d
+74 verbose etag W/"585d03d8-19789"
+75 verbose lastModified Fri, 23 Dec 2016 11:00:40 GMT
+76 http request GET https://registry.npmjs.org/angular-animate
+77 verbose request uri https://registry.npmjs.org/angular-material
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 10:49:45 AM
+80 verbose etag W/"585370da-f3fe"
+81 verbose lastModified Fri, 16 Dec 2016 04:43:06 GMT
+82 http request GET https://registry.npmjs.org/angular-material
+83 verbose request uri https://registry.npmjs.org/angular
+84 verbose request no auth needed
+85 info attempt registry request try #1 at 10:49:45 AM
+86 verbose etag W/"585d03cf-2375e"
+87 verbose lastModified Fri, 23 Dec 2016 11:00:31 GMT
+88 http request GET https://registry.npmjs.org/angular
+89 verbose request uri https://registry.npmjs.org/angular-ui-router
+90 verbose request no auth needed
+91 info attempt registry request try #1 at 10:49:45 AM
+92 verbose etag W/"5847adcf-ca03"
+93 verbose lastModified Wed, 07 Dec 2016 06:35:59 GMT
+94 http request GET https://registry.npmjs.org/angular-ui-router
+95 verbose request uri https://registry.npmjs.org/angular-aria
+96 verbose request no auth needed
+97 info attempt registry request try #1 at 10:49:45 AM
+98 verbose etag W/"585d03e2-140f4"
+99 verbose lastModified Fri, 23 Dec 2016 11:00:50 GMT
+100 http request GET https://registry.npmjs.org/angular-aria
+101 http 304 https://registry.npmjs.org/angular-material
+102 silly get cb [ 304,
+102 silly get   { date: 'Sat, 07 Jan 2017 05:19:39 GMT',
+102 silly get     via: '1.1 varnish',
+102 silly get     'cache-control': 'max-age=300',
+102 silly get     etag: 'W/"585370da-f3fe"',
+102 silly get     age: '0',
+102 silly get     connection: 'close',
+102 silly get     'x-served-by': 'cache-lcy1146-LCY',
+102 silly get     'x-cache': 'MISS',
+102 silly get     'x-cache-hits': '0',
+102 silly get     'x-timer': 'S1483766379.318267,VS0,VE132',
+102 silly get     vary: 'Accept-Encoding' } ]
+103 verbose etag https://registry.npmjs.org/angular-material from cache
+104 verbose get saving angular-material to /home/aakash/.npm/registry.npmjs.org/angular-material/.cache.json
+105 silly addNameRange number 2 { name: 'angular-material',
+105 silly addNameRange   range: '>=1.1.0 <1.2.0',
+105 silly addNameRange   hasData: true }
+106 silly addNameRange versions [ 'angular-material',
+106 silly addNameRange   [ '0.7.1',
+106 silly addNameRange     '0.8.0',
+106 silly addNameRange     '0.8.1',
+106 silly addNameRange     '0.8.2',
+106 silly addNameRange     '0.8.3',
+106 silly addNameRange     '0.9.2',
+106 silly addNameRange     '0.9.3',
+106 silly addNameRange     '0.9.4',
+106 silly addNameRange     '0.9.5',
+106 silly addNameRange     '0.9.6',
+106 silly addNameRange     '0.9.7',
+106 silly addNameRange     '0.9.8',
+106 silly addNameRange     '0.10.0',
+106 silly addNameRange     '0.10.1',
+106 silly addNameRange     '0.11.0',
+106 silly addNameRange     '0.11.1',
+106 silly addNameRange     '0.11.2',
+106 silly addNameRange     '0.11.3',
+106 silly addNameRange     '0.11.4',
+106 silly addNameRange     '1.0.0',
+106 silly addNameRange     '1.0.1',
+106 silly addNameRange     '1.0.2',
+106 silly addNameRange     '1.0.4',
+106 silly addNameRange     '1.0.5',
+106 silly addNameRange     '1.0.6',
+106 silly addNameRange     '1.0.7',
+106 silly addNameRange     '1.0.8',
+106 silly addNameRange     '1.1.0-rc4-master-06e7e99',
+106 silly addNameRange     '1.0.9',
+106 silly addNameRange     '1.1.0-rc.5',
+106 silly addNameRange     '1.1.0',
+106 silly addNameRange     '1.1.1' ] ]
+107 verbose addNamed angular-material@1.1.1
+108 silly addNamed semver.valid 1.1.1
+109 silly addNamed semver.validRange 1.1.1
+110 http 304 https://registry.npmjs.org/angular-aria
+111 silly get cb [ 304,
+111 silly get   { date: 'Sat, 07 Jan 2017 05:19:39 GMT',
+111 silly get     via: '1.1 varnish',
+111 silly get     'cache-control': 'max-age=300',
+111 silly get     etag: 'W/"585d03e2-140f4"',
+111 silly get     age: '0',
+111 silly get     connection: 'close',
+111 silly get     'x-served-by': 'cache-lcy1142-LCY',
+111 silly get     'x-cache': 'HIT',
+111 silly get     'x-cache-hits': '1',
+111 silly get     'x-timer': 'S1483766379.320726,VS0,VE126',
+111 silly get     vary: 'Accept-Encoding' } ]
+112 verbose etag https://registry.npmjs.org/angular-aria from cache
+113 verbose get saving angular-aria to /home/aakash/.npm/registry.npmjs.org/angular-aria/.cache.json
+114 http 304 https://registry.npmjs.org/angular-ui-router
+115 silly get cb [ 304,
+115 silly get   { date: 'Sat, 07 Jan 2017 05:19:39 GMT',
+115 silly get     via: '1.1 varnish',
+115 silly get     'cache-control': 'max-age=300',
+115 silly get     etag: 'W/"5847adcf-ca03"',
+115 silly get     age: '0',
+115 silly get     connection: 'close',
+115 silly get     'x-served-by': 'cache-lcy1147-LCY',
+115 silly get     'x-cache': 'HIT',
+115 silly get     'x-cache-hits': '1',
+115 silly get     'x-timer': 'S1483766379.331395,VS0,VE116',
+115 silly get     vary: 'Accept-Encoding' } ]
+116 verbose etag https://registry.npmjs.org/angular-ui-router from cache
+117 verbose get saving angular-ui-router to /home/aakash/.npm/registry.npmjs.org/angular-ui-router/.cache.json
+118 silly addNameTag next cb for angular-ui-router with tag latest
+119 verbose addNamed angular-ui-router@0.3.2
+120 silly addNamed semver.valid 0.3.2
+121 silly addNamed semver.validRange 0.3.2
+122 silly addNameTag next cb for angular-aria with tag latest
+123 verbose addNamed angular-aria@1.6.1
+124 silly addNamed semver.valid 1.6.1
+125 silly addNamed semver.validRange 1.6.1
+126 http 304 https://registry.npmjs.org/angular-animate
+127 silly get cb [ 304,
+127 silly get   { date: 'Sat, 07 Jan 2017 05:19:39 GMT',
+127 silly get     via: '1.1 varnish',
+127 silly get     'cache-control': 'max-age=300',
+127 silly get     etag: 'W/"585d03d8-19789"',
+127 silly get     age: '0',
+127 silly get     connection: 'close',
+127 silly get     'x-served-by': 'cache-lcy1136-LCY',
+127 silly get     'x-cache': 'MISS',
+127 silly get     'x-cache-hits': '0',
+127 silly get     'x-timer': 'S1483766379.346576,VS0,VE113',
+127 silly get     vary: 'Accept-Encoding' } ]
+128 verbose etag https://registry.npmjs.org/angular-animate from cache
+129 verbose get saving angular-animate to /home/aakash/.npm/registry.npmjs.org/angular-animate/.cache.json
+130 silly addNameTag next cb for angular-animate with tag latest
+131 verbose addNamed angular-animate@1.6.1
+132 silly addNamed semver.valid 1.6.1
+133 silly addNamed semver.validRange 1.6.1
+134 silly cache afterAdd angular-material@1.1.1
+135 verbose afterAdd /home/aakash/.npm/angular-material/1.1.1/package/package.json not in flight; writing
+136 verbose afterAdd /home/aakash/.npm/angular-material/1.1.1/package/package.json written
+137 silly cache afterAdd angular-aria@1.6.1
+138 verbose afterAdd /home/aakash/.npm/angular-aria/1.6.1/package/package.json not in flight; writing
+139 verbose afterAdd /home/aakash/.npm/angular-aria/1.6.1/package/package.json written
+140 silly cache afterAdd angular-animate@1.6.1
+141 verbose afterAdd /home/aakash/.npm/angular-animate/1.6.1/package/package.json not in flight; writing
+142 verbose afterAdd /home/aakash/.npm/angular-animate/1.6.1/package/package.json written
+143 silly cache afterAdd angular-ui-router@0.3.2
+144 verbose afterAdd /home/aakash/.npm/angular-ui-router/0.3.2/package/package.json not in flight; writing
+145 verbose afterAdd /home/aakash/.npm/angular-ui-router/0.3.2/package/package.json written
+146 http 304 https://registry.npmjs.org/angular
+147 silly get cb [ 304,
+147 silly get   { date: 'Sat, 07 Jan 2017 05:19:39 GMT',
+147 silly get     via: '1.1 varnish',
+147 silly get     'cache-control': 'max-age=300',
+147 silly get     etag: 'W/"585d03cf-2375e"',
+147 silly get     age: '188',
+147 silly get     connection: 'close',
+147 silly get     'x-served-by': 'cache-lcy1133-LCY',
+147 silly get     'x-cache': 'HIT',
+147 silly get     'x-cache-hits': '1',
+147 silly get     'x-timer': 'S1483766379.732123,VS0,VE0',
+147 silly get     vary: 'Accept-Encoding' } ]
+148 verbose etag https://registry.npmjs.org/angular from cache
+149 verbose get saving angular to /home/aakash/.npm/registry.npmjs.org/angular/.cache.json
+150 silly addNameRange number 2 { name: 'angular', range: '>=1.4.7 <2.0.0', hasData: true }
+151 silly addNameRange versions [ 'angular',
+151 silly addNameRange   [ '0.0.1',
+151 silly addNameRange     '0.0.1-1',
+151 silly addNameRange     '0.0.1-2',
+151 silly addNameRange     '0.0.2',
+151 silly addNameRange     '0.0.3',
+151 silly addNameRange     '0.0.4',
+151 silly addNameRange     '1.0.0',
+151 silly addNameRange     '1.0.1',
+151 silly addNameRange     '1.0.2',
+151 silly addNameRange     '1.0.3',
+151 silly addNameRange     '1.0.4',
+151 silly addNameRange     '1.0.5',
+151 silly addNameRange     '1.0.6',
+151 silly addNameRange     '1.0.7',
+151 silly addNameRange     '1.0.8',
+151 silly addNameRange     '1.1.0',
+151 silly addNameRange     '1.1.1',
+151 silly addNameRange     '1.1.2',
+151 silly addNameRange     '1.1.3',
+151 silly addNameRange     '1.1.4',
+151 silly addNameRange     '1.1.5',
+151 silly addNameRange     '1.2.0',
+151 silly addNameRange     '1.2.1',
+151 silly addNameRange     '1.2.2',
+151 silly addNameRange     '1.2.3',
+151 silly addNameRange     '1.2.4',
+151 silly addNameRange     '1.2.5',
+151 silly addNameRange     '1.2.6',
+151 silly addNameRange     '1.2.7',
+151 silly addNameRange     '1.2.8',
+151 silly addNameRange     '1.2.9',
+151 silly addNameRange     '1.2.10',
+151 silly addNameRange     '1.2.11',
+151 silly addNameRange     '1.2.12',
+151 silly addNameRange     '1.2.13',
+151 silly addNameRange     '1.2.14',
+151 silly addNameRange     '1.2.15',
+151 silly addNameRange     '1.2.16',
+151 silly addNameRange     '1.2.17',
+151 silly addNameRange     '1.2.18',
+151 silly addNameRange     '1.2.19',
+151 silly addNameRange     '1.2.20',
+151 silly addNameRange     '1.2.21',
+151 silly addNameRange     '1.2.22',
+151 silly addNameRange     '1.2.23',
+151 silly addNameRange     '1.3.0-rc.5',
+151 silly addNameRange     '1.3.0',
+151 silly addNameRange     '1.3.1',
+151 silly addNameRange     '1.3.2',
+151 silly addNameRange     '1.3.3',
+151 silly addNameRange     '1.3.4-build.3588',
+151 silly addNameRange     '1.2.27',
+151 silly addNameRange     '1.3.4',
+151 silly addNameRange     '1.3.5',
+151 silly addNameRange     '1.3.6',
+151 silly addNameRange     '1.3.7',
+151 silly addNameRange     '1.2.28',
+151 silly addNameRange     '1.3.8',
+151 silly addNameRange     '1.4.0-beta.0',
+151 silly addNameRange     '1.3.9',
+151 silly addNameRange     '1.3.10',
+151 silly addNameRange     '1.4.0-beta.1',
+151 silly addNameRange     '1.4.0-beta.2',
+151 silly addNameRange     '1.3.11',
+151 silly addNameRange     '1.4.0-beta.3',
+151 silly addNameRange     '1.3.12',
+151 silly addNameRange     '1.3.13',
+151 silly addNameRange     '1.4.0-beta.4',
+151 silly addNameRange     '1.3.14',
+151 silly addNameRange     '1.4.0-beta.5',
+151 silly addNameRange     '1.4.0-beta.6',
+151 silly addNameRange     '1.3.15',
+151 silly addNameRange     '1.4.0-rc.0',
+151 silly addNameRange     '1.4.0-rc.1',
+151 silly addNameRange     '1.4.0-rc.2',
+151 silly addNameRange     '1.4.0',
+151 silly addNameRange     '1.3.16',
+151 silly addNameRange     '1.4.1',
+151 silly addNameRange     '1.4.2',
+151 silly addNameRange     '1.3.17',
+151 silly addNameRange     '1.4.3',
+151 silly addNameRange     '1.4.4',
+151 silly addNameRange     '1.3.18',
+151 silly addNameRange     '1.4.5',
+151 silly addNameRange     '1.3.19',
+151 silly addNameRange     '1.4.6',
+151 silly addNameRange     '1.5.0-beta.0',
+151 silly addNameRange     '1.2.29',
+151 silly addNameRange     '1.3.20',
+151 silly addNameRange     '1.4.7',
+151 silly addNameRange     '1.5.0-beta.2',
+151 silly addNameRange     '1.4.8',
+151 silly addNameRange     '1.5.0-rc.0',
+151 silly addNameRange     '1.5.0-rc.1',
+151 silly addNameRange     '1.4.9',
+151 silly addNameRange     '1.5.0-rc.2',
+151 silly addNameRange     '1.5.0',
+151 silly addNameRange     '1.5.1',
+151 silly addNameRange     '1.4.10',
+151 silly addNameRange     '1.5.2',
+151 silly addNameRange     '1.5.3',
+151 silly addNameRange     '1.5.5',
+151 silly addNameRange     '1.4.11',
+151 silly addNameRange     '1.5.6',
+151 silly addNameRange     '1.4.12',
+151 silly addNameRange     '1.5.7',
+151 silly addNameRange     '1.2.30',
+151 silly addNameRange     '1.5.8',
+151 silly addNameRange     '1.4.13',
+151 silly addNameRange     '1.2.31',
+151 silly addNameRange     '1.2.32',
+151 silly addNameRange     '1.4.14',
+151 silly addNameRange     '1.6.0-rc.0',
+151 silly addNameRange     '1.6.0-rc.1',
+151 silly addNameRange     '1.5.9',
+151 silly addNameRange     '1.6.0-rc.2',
+151 silly addNameRange     '1.6.0',
+151 silly addNameRange     '1.5.10',
+151 silly addNameRange     '1.6.1' ] ]
+152 verbose addNamed angular@1.6.1
+153 silly addNamed semver.valid 1.6.1
+154 silly addNamed semver.validRange 1.6.1
+155 silly cache afterAdd angular@1.6.1
+156 verbose afterAdd /home/aakash/.npm/angular/1.6.1/package/package.json not in flight; writing
+157 verbose afterAdd /home/aakash/.npm/angular/1.6.1/package/package.json written
+158 silly install resolved [ { name: 'angular-material',
+158 silly install resolved     version: '1.1.1',
+158 silly install resolved     main: 'index',
+158 silly install resolved     format: 'cjs',
+158 silly install resolved     registry: 'github',
+158 silly install resolved     peerDependencies:
+158 silly install resolved      { angular: '>=1.3 <1.6',
+158 silly install resolved        'angular-animate': '>=1.3 <1.6',
+158 silly install resolved        'angular-aria': '>=1.3 <1.6' },
+158 silly install resolved     jspm: { dependencies: [Object], shim: [Object], peerDependencies: {} },
+158 silly install resolved     homepage: 'https://material.angularjs.org',
+158 silly install resolved     repository: { type: 'git', url: 'git://github.com/angular/material.git' },
+158 silly install resolved     licenses: [ [Object] ],
+158 silly install resolved     keywords: [ 'angular', 'material', 'browser', 'client-side' ],
+158 silly install resolved     bugs: { url: 'https://github.com/angular/material/issues' },
+158 silly install resolved     gitHead: 'ec9b476051eef167c9b1522e1943f10545119bbe',
+158 silly install resolved     description: 'This repository is used only for Angular Material v1.x library deployments and localized installs using `npm` and `bower`. The actual component source-code for this library is in the [main Angular Material repository](https://github.com/angular/material).',
+158 silly install resolved     _id: 'angular-material@1.1.1',
+158 silly install resolved     scripts: {},
+158 silly install resolved     _shasum: 'ed12f394ba71a9189d664115624f6787a7439af2',
+158 silly install resolved     _from: 'angular-material@>=1.1.0 <1.2.0',
+158 silly install resolved     _npmVersion: '3.8.3',
+158 silly install resolved     _nodeVersion: '5.10.0',
+158 silly install resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+158 silly install resolved     dist:
+158 silly install resolved      { shasum: 'ed12f394ba71a9189d664115624f6787a7439af2',
+158 silly install resolved        tarball: 'https://registry.npmjs.org/angular-material/-/angular-material-1.1.1.tgz' },
+158 silly install resolved     maintainers: [ [Object] ],
+158 silly install resolved     _npmOperationalInternal:
+158 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+158 silly install resolved        tmp: 'tmp/angular-material-1.1.1.tgz_1472843757134_0.5154407320078462' },
+158 silly install resolved     directories: {},
+158 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-material/-/angular-material-1.1.1.tgz',
+158 silly install resolved     readme: 'ERROR: No README data found!' },
+158 silly install resolved   { name: 'angular-aria',
+158 silly install resolved     version: '1.6.1',
+158 silly install resolved     description: 'AngularJS module for making accessibility easy',
+158 silly install resolved     main: 'index.js',
+158 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+158 silly install resolved     repository:
+158 silly install resolved      { type: 'git',
+158 silly install resolved        url: 'git+https://github.com/angular/angular.js.git' },
+158 silly install resolved     keywords:
+158 silly install resolved      [ 'angular',
+158 silly install resolved        'framework',
+158 silly install resolved        'browser',
+158 silly install resolved        'accessibility',
+158 silly install resolved        'a11y',
+158 silly install resolved        'client-side' ],
+158 silly install resolved     author:
+158 silly install resolved      { name: 'Angular Core Team',
+158 silly install resolved        email: 'angular-core+npm@google.com' },
+158 silly install resolved     license: 'MIT',
+158 silly install resolved     bugs: { url: 'https://github.com/angular/angular.js/issues' },
+158 silly install resolved     homepage: 'http://angularjs.org',
+158 silly install resolved     jspm: { shim: [Object] },
+158 silly install resolved     gitHead: 'ea49a3f40a21e9c85ca7157e06f51c3d3a7cd516',
+158 silly install resolved     _id: 'angular-aria@1.6.1',
+158 silly install resolved     _shasum: '0fcbf1152b4c26e8671daddea7443a1b983434b9',
+158 silly install resolved     _from: 'angular-aria@latest',
+158 silly install resolved     _npmVersion: '3.10.9',
+158 silly install resolved     _nodeVersion: '6.9.2',
+158 silly install resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+158 silly install resolved     dist:
+158 silly install resolved      { shasum: '0fcbf1152b4c26e8671daddea7443a1b983434b9',
+158 silly install resolved        tarball: 'https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.1.tgz' },
+158 silly install resolved     maintainers: [ [Object], [Object] ],
+158 silly install resolved     _npmOperationalInternal:
+158 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+158 silly install resolved        tmp: 'tmp/angular-aria-1.6.1.tgz_1482490848377_0.7606733029242605' },
+158 silly install resolved     directories: {},
+158 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.1.tgz',
+158 silly install resolved     readme: 'ERROR: No README data found!' },
+158 silly install resolved   { name: 'angular-animate',
+158 silly install resolved     version: '1.6.1',
+158 silly install resolved     description: 'AngularJS module for animations',
+158 silly install resolved     main: 'index.js',
+158 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+158 silly install resolved     repository:
+158 silly install resolved      { type: 'git',
+158 silly install resolved        url: 'git+https://github.com/angular/angular.js.git' },
+158 silly install resolved     keywords: [ 'angular', 'framework', 'browser', 'animation', 'client-side' ],
+158 silly install resolved     author:
+158 silly install resolved      { name: 'Angular Core Team',
+158 silly install resolved        email: 'angular-core+npm@google.com' },
+158 silly install resolved     license: 'MIT',
+158 silly install resolved     bugs: { url: 'https://github.com/angular/angular.js/issues' },
+158 silly install resolved     homepage: 'http://angularjs.org',
+158 silly install resolved     jspm: { shim: [Object] },
+158 silly install resolved     gitHead: '49a93460f1960dc3936173f1f2d026f89bfef90c',
+158 silly install resolved     _id: 'angular-animate@1.6.1',
+158 silly install resolved     _shasum: '19e3b82b7392e2bbdd83af33c0af0d85437f3a14',
+158 silly install resolved     _from: 'angular-animate@latest',
+158 silly install resolved     _npmVersion: '3.10.9',
+158 silly install resolved     _nodeVersion: '6.9.2',
+158 silly install resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+158 silly install resolved     dist:
+158 silly install resolved      { shasum: '19e3b82b7392e2bbdd83af33c0af0d85437f3a14',
+158 silly install resolved        tarball: 'https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.1.tgz' },
+158 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+158 silly install resolved     _npmOperationalInternal:
+158 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+158 silly install resolved        tmp: 'tmp/angular-animate-1.6.1.tgz_1482490840193_0.8863561814650893' },
+158 silly install resolved     directories: {},
+158 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.1.tgz',
+158 silly install resolved     readme: 'ERROR: No README data found!' },
+158 silly install resolved   { name: 'angular-ui-router',
+158 silly install resolved     description: 'State-based routing for AngularJS',
+158 silly install resolved     version: '0.3.2',
+158 silly install resolved     homepage: 'http://angular-ui.github.com/',
+158 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+158 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+158 silly install resolved     repository:
+158 silly install resolved      { type: 'git',
+158 silly install resolved        url: 'git+https://github.com/angular-ui/ui-router.git' },
+158 silly install resolved     bugs: { url: 'https://github.com/angular-ui/ui-router/issues' },
+158 silly install resolved     license: 'MIT',
+158 silly install resolved     licenses: [ [Object] ],
+158 silly install resolved     dependencies: { angular: '^1.0.8' },
+158 silly install resolved     devDependencies:
+158 silly install resolved      { 'faithful-exec': '~0.1.0',
+158 silly install resolved        grunt: '~0.4.1',
+158 silly install resolved        'grunt-contrib-clean': '~0.5.0',
+158 silly install resolved        'grunt-contrib-concat': '~0.3.0',
+158 silly install resolved        'grunt-contrib-connect': '~0.7.1',
+158 silly install resolved        'grunt-contrib-jshint': '~0.8.0',
+158 silly install resolved        'grunt-contrib-uglify': '~0.4.0',
+158 silly install resolved        'grunt-contrib-watch': '~0.5.3',
+158 silly install resolved        'grunt-conventional-changelog': '~1.1.0',
+158 silly install resolved        'grunt-karma': '^1.0.0',
+158 silly install resolved        'grunt-ngdocs': '~0.2.5',
+158 silly install resolved        karma: '^1.3.0',
+158 silly install resolved        'karma-chrome-launcher': '~0.1.0',
+158 silly install resolved        'karma-coffee-preprocessor': '~0.1.0',
+158 silly install resolved        'karma-firefox-launcher': '~0.1.0',
+158 silly install resolved        'karma-html2js-preprocessor': '~0.1.0',
+158 silly install resolved        'karma-jasmine': '~0.1.3',
+158 silly install resolved        'karma-phantomjs-launcher': '~1.0.0',
+158 silly install resolved        'karma-requirejs': '~0.2.0',
+158 silly install resolved        'karma-script-launcher': '~0.1.0',
+158 silly install resolved        'load-grunt-tasks': '~0.4.0',
+158 silly install resolved        'phantomjs-polyfill': '0.0.1',
+158 silly install resolved        requirejs: '^2.1.22',
+158 silly install resolved        shelljs: '~0.2.6' },
+158 silly install resolved     main: 'release/angular-ui-router.js',
+158 silly install resolved     gitHead: '5e5b6a035813801c5deeece9f2dd4aeb5115569b',
+158 silly install resolved     _id: 'angular-ui-router@0.3.2',
+158 silly install resolved     scripts: {},
+158 silly install resolved     _shasum: 'c27e0496309c99218d5655985b164a096ab520a9',
+158 silly install resolved     _from: 'angular-ui-router@latest',
+158 silly install resolved     _npmVersion: '3.10.7',
+158 silly install resolved     _nodeVersion: '6.6.0',
+158 silly install resolved     _npmUser:
+158 silly install resolved      { name: 'christopherthielen',
+158 silly install resolved        email: 'christopherthielen@ikkyikkyikkypikangzoopboing.com' },
+158 silly install resolved     dist:
+158 silly install resolved      { shasum: 'c27e0496309c99218d5655985b164a096ab520a9',
+158 silly install resolved        tarball: 'https://registry.npmjs.org/angular-ui-router/-/angular-ui-router-0.3.2.tgz' },
+158 silly install resolved     _npmOperationalInternal:
+158 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+158 silly install resolved        tmp: 'tmp/angular-ui-router-0.3.2.tgz_1478214044517_0.11156853963620961' },
+158 silly install resolved     directories: {},
+158 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-ui-router/-/angular-ui-router-0.3.2.tgz',
+158 silly install resolved     readme: 'ERROR: No README data found!' },
+158 silly install resolved   { name: 'angular',
+158 silly install resolved     version: '1.6.1',
+158 silly install resolved     description: 'HTML enhanced for web apps',
+158 silly install resolved     main: 'index.js',
+158 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+158 silly install resolved     repository:
+158 silly install resolved      { type: 'git',
+158 silly install resolved        url: 'git+https://github.com/angular/angular.js.git' },
+158 silly install resolved     keywords: [ 'angular', 'framework', 'browser', 'client-side' ],
+158 silly install resolved     author:
+158 silly install resolved      { name: 'Angular Core Team',
+158 silly install resolved        email: 'angular-core+npm@google.com' },
+158 silly install resolved     license: 'MIT',
+158 silly install resolved     bugs: { url: 'https://github.com/angular/angular.js/issues' },
+158 silly install resolved     homepage: 'http://angularjs.org',
+158 silly install resolved     gitHead: '3828060389c83384b0a162eea82b21f183aa060c',
+158 silly install resolved     _id: 'angular@1.6.1',
+158 silly install resolved     _shasum: 'a7b6d763a74c157325692619e97257e69d9b6a27',
+158 silly install resolved     _from: 'angular@>=1.4.7 <2.0.0',
+158 silly install resolved     _npmVersion: '3.10.9',
+158 silly install resolved     _nodeVersion: '6.9.2',
+158 silly install resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+158 silly install resolved     dist:
+158 silly install resolved      { shasum: 'a7b6d763a74c157325692619e97257e69d9b6a27',
+158 silly install resolved        tarball: 'https://registry.npmjs.org/angular/-/angular-1.6.1.tgz' },
+158 silly install resolved     maintainers: [ [Object], [Object] ],
+158 silly install resolved     _npmOperationalInternal:
+158 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+158 silly install resolved        tmp: 'tmp/angular-1.6.1.tgz_1482490830968_0.9382589478045702' },
+158 silly install resolved     directories: {},
+158 silly install resolved     _resolved: 'https://registry.npmjs.org/angular/-/angular-1.6.1.tgz',
+158 silly install resolved     readme: 'ERROR: No README data found!' } ]
+159 info install angular-material@1.1.1 into /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+160 info install angular-aria@1.6.1 into /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+161 info install angular-animate@1.6.1 into /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+162 info install angular-ui-router@0.3.2 into /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+163 info install angular@1.6.1 into /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+164 info installOne angular-material@1.1.1
+165 verbose installOne of angular-material to /home/aakash/Projects/NodeJS Projects/Switch/static/assets not in flight; installing
+166 info installOne angular-aria@1.6.1
+167 verbose installOne of angular-aria to /home/aakash/Projects/NodeJS Projects/Switch/static/assets not in flight; installing
+168 info installOne angular-animate@1.6.1
+169 verbose installOne of angular-animate to /home/aakash/Projects/NodeJS Projects/Switch/static/assets not in flight; installing
+170 info installOne angular-ui-router@0.3.2
+171 verbose installOne of angular-ui-router to /home/aakash/Projects/NodeJS Projects/Switch/static/assets not in flight; installing
+172 info installOne angular@1.6.1
+173 verbose installOne of angular to /home/aakash/Projects/NodeJS Projects/Switch/static/assets not in flight; installing
+174 verbose lock using /home/aakash/.npm/_locks/angular-material-0f34185e02c65520.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+175 verbose lock using /home/aakash/.npm/_locks/angular-aria-4ebf75bfb10d67e2.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+176 verbose lock using /home/aakash/.npm/_locks/angular-animate-be27d48388ebbeee.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+177 verbose lock using /home/aakash/.npm/_locks/angular-ui-router-2b9e2eca80b09102.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+178 verbose lock using /home/aakash/.npm/_locks/angular-1fb5b9056885445b.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+179 silly install write writing angular-material 1.1.1 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+180 silly cache addNamed cb angular-material@1.1.1
+181 verbose unbuild node_modules/angular-material
+182 silly install write writing angular-aria 1.6.1 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+183 silly cache addNamed cb angular-aria@1.6.1
+184 verbose unbuild node_modules/angular-aria
+185 silly install write writing angular-animate 1.6.1 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+186 silly cache addNamed cb angular-animate@1.6.1
+187 verbose unbuild node_modules/angular-animate
+188 silly install write writing angular-ui-router 0.3.2 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+189 silly cache addNamed cb angular-ui-router@0.3.2
+190 verbose unbuild node_modules/angular-ui-router
+191 silly install write writing angular 1.6.1 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+192 silly cache addNamed cb angular@1.6.1
+193 verbose unbuild node_modules/angular
+194 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material is being purged from base /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+195 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+196 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria is being purged from base /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+197 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+198 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate is being purged from base /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+199 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+200 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router is being purged from base /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+201 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+202 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular is being purged from base /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+203 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+204 verbose tar unpack /home/aakash/.npm/angular-material/1.1.1/package.tgz
+205 verbose tar unpacking to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+206 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material is being purged
+207 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+208 verbose tar unpack /home/aakash/.npm/angular-aria/1.6.1/package.tgz
+209 verbose tar unpacking to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+210 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria is being purged
+211 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+212 verbose tar unpack /home/aakash/.npm/angular-animate/1.6.1/package.tgz
+213 verbose tar unpacking to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+214 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate is being purged
+215 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+216 verbose tar unpack /home/aakash/.npm/angular-ui-router/0.3.2/package.tgz
+217 verbose tar unpacking to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+218 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router is being purged
+219 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+220 verbose tar unpack /home/aakash/.npm/angular/1.6.1/package.tgz
+221 verbose tar unpacking to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+222 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular is being purged
+223 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+224 silly gunzTarPerm modes [ '755', '644' ]
+225 silly gunzTarPerm modes [ '755', '644' ]
+226 silly gunzTarPerm modes [ '755', '644' ]
+227 silly gunzTarPerm modes [ '755', '644' ]
+228 silly gunzTarPerm modes [ '755', '644' ]
+229 silly gunzTarPerm extractEntry package.json
+230 silly gunzTarPerm extractEntry package.json
+231 silly gunzTarPerm extractEntry .npmignore
+232 silly gunzTarPerm extractEntry README.md
+233 silly gunzTarPerm extractEntry package.json
+234 silly gunzTarPerm extractEntry package.json
+235 silly gunzTarPerm extractEntry package.json
+236 silly gunzTarPerm extractEntry README.md
+237 silly gunzTarPerm extractEntry angular-aria.js
+238 silly gunzTarPerm extractEntry README.md
+239 silly gunzTarPerm extractEntry angular-animate.js
+240 silly gunzTarPerm extractEntry README.md
+241 silly gunzTarPerm extractEntry LICENSE
+242 silly gunzTarPerm extractEntry README.md
+243 silly gunzTarPerm extractEntry angular.js
+244 silly gunzTarPerm extractEntry LICENSE
+245 silly gunzTarPerm extractEntry angular-material-mocks.js
+246 silly gunzTarPerm extractEntry angular-aria.min.js
+247 silly gunzTarPerm extractEntry angular-animate.min.js
+248 silly gunzTarPerm extractEntry CHANGELOG.md
+249 silly gunzTarPerm extractEntry ui-router.ipr
+250 silly gunzTarPerm extractEntry index.js
+251 silly gunzTarPerm extractEntry index.js
+252 silly gunzTarPerm extractEntry LICENSE.md
+253 silly gunzTarPerm extractEntry index.js
+254 silly gunzTarPerm extractEntry LICENSE.md
+255 silly gunzTarPerm extractEntry angular-animate.min.js.map
+256 silly gunzTarPerm extractEntry angular-material.js
+257 silly gunzTarPerm extractEntry CONTRIBUTING.md
+258 silly gunzTarPerm extractEntry release/angular-ui-router.js
+259 silly gunzTarPerm extractEntry release/angular-ui-router.min.js
+260 silly gunzTarPerm extractEntry scripts/ui-router-ng2.iml
+261 silly gunzTarPerm extractEntry angular-aria.min.js.map
+262 silly gunzTarPerm extractEntry bower.json
+263 silly gunzTarPerm extractEntry scripts/ui-router-ng2.ipr
+264 silly gunzTarPerm extractEntry bower.json
+265 silly gunzTarPerm extractEntry scripts/ui-router-ng2.iws
+266 silly gunzTarPerm extractEntry src/common.js
+267 silly gunzTarPerm extractEntry src/state.js
+268 info preinstall angular-aria@1.6.1
+269 silly gunzTarPerm extractEntry src/stateDirectives.js
+270 silly gunzTarPerm extractEntry src/stateFilters.js
+271 silly install resolved []
+272 verbose about to build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+273 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+274 verbose linkStuff [ false,
+274 verbose linkStuff   false,
+274 verbose linkStuff   false,
+274 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules' ]
+275 info linkStuff angular-aria@1.6.1
+276 verbose linkBins angular-aria@1.6.1
+277 verbose linkMans angular-aria@1.6.1
+278 verbose rebuildBundles angular-aria@1.6.1
+279 info install angular-aria@1.6.1
+280 info postinstall angular-aria@1.6.1
+281 verbose unlock done using /home/aakash/.npm/_locks/angular-aria-4ebf75bfb10d67e2.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+282 silly gunzTarPerm extractEntry src/resolve.js
+283 silly gunzTarPerm extractEntry src/urlMatcherFactory.js
+284 silly gunzTarPerm extractEntry src/urlRouter.js
+285 silly gunzTarPerm extractEntry angular-material.min.js
+286 silly gunzTarPerm extractEntry angular.min.js
+287 silly gunzTarPerm extractEntry src/view.js
+288 silly gunzTarPerm extractEntry CHANGELOG.md
+289 silly gunzTarPerm extractEntry index.js
+290 silly gunzTarPerm extractEntry src/viewDirective.js
+291 silly gunzTarPerm extractEntry LICENSE.md
+292 silly gunzTarPerm extractEntry src/viewScroll.js
+293 silly gunzTarPerm extractEntry angular-csp.css
+294 silly gunzTarPerm extractEntry src/templateFactory.js
+295 silly gunzTarPerm extractEntry angular-material.scss
+296 silly gunzTarPerm extractEntry angular.min.js.gzip
+297 silly gunzTarPerm extractEntry ui-router.iml
+298 silly gunzTarPerm extractEntry ui-router.iws
+299 silly gunzTarPerm extractEntry bower.json
+300 silly gunzTarPerm extractEntry angular.min.js.map
+301 silly gunzTarPerm extractEntry angular-material.css
+302 silly gunzTarPerm extractEntry layouts/angular-material.layout-attributes.css
+303 silly gunzTarPerm extractEntry bower.json
+304 silly gunzTarPerm extractEntry layouts/angular-material.layout-attributes.min.css
+305 info preinstall angular-animate@1.6.1
+306 silly install resolved []
+307 verbose about to build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+308 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+309 verbose linkStuff [ false,
+309 verbose linkStuff   false,
+309 verbose linkStuff   false,
+309 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules' ]
+310 info linkStuff angular-animate@1.6.1
+311 verbose linkBins angular-animate@1.6.1
+312 verbose linkMans angular-animate@1.6.1
+313 verbose rebuildBundles angular-animate@1.6.1
+314 info install angular-animate@1.6.1
+315 info postinstall angular-animate@1.6.1
+316 verbose unlock done using /home/aakash/.npm/_locks/angular-animate-be27d48388ebbeee.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+317 silly gunzTarPerm extractEntry layouts/angular-material.layout-attributes.scss
+318 silly gunzTarPerm extractEntry layouts/angular-material.layouts.css
+319 silly gunzTarPerm extractEntry layouts/angular-material.layouts.ie_fixes.css
+320 silly gunzTarPerm extractEntry layouts/angular-material.layouts.min.css
+321 silly gunzTarPerm extractEntry layouts/angular-material.layouts.scss
+322 silly gunzTarPerm extractEntry modules/closure/menu/menu.js
+323 silly gunzTarPerm extractEntry modules/closure/menu/menu.min.js
+324 silly gunzTarPerm extractEntry modules/closure/menu/menu-default-theme.css
+325 silly gunzTarPerm extractEntry modules/closure/menu/menu-default-theme.min.css
+326 silly gunzTarPerm extractEntry modules/closure/menu/menu.css
+327 silly gunzTarPerm extractEntry modules/closure/menu/menu.min.css
+328 silly gunzTarPerm extractEntry modules/closure/autocomplete/autocomplete.js
+329 silly gunzTarPerm extractEntry modules/closure/autocomplete/autocomplete.min.js
+330 silly gunzTarPerm extractEntry modules/closure/autocomplete/autocomplete-default-theme.css
+331 silly gunzTarPerm extractEntry modules/closure/autocomplete/autocomplete-default-theme.min.css
+332 silly gunzTarPerm extractEntry modules/closure/autocomplete/autocomplete.css
+333 silly gunzTarPerm extractEntry modules/closure/autocomplete/autocomplete.min.css
+334 silly gunzTarPerm extractEntry modules/closure/bottomSheet/bottomSheet.js
+335 silly gunzTarPerm extractEntry modules/closure/bottomSheet/bottomSheet.min.js
+336 silly gunzTarPerm extractEntry modules/closure/bottomSheet/bottomSheet-default-theme.css
+337 silly gunzTarPerm extractEntry modules/closure/bottomSheet/bottomSheet-default-theme.min.css
+338 silly gunzTarPerm extractEntry modules/closure/bottomSheet/bottomSheet.css
+339 silly gunzTarPerm extractEntry modules/closure/bottomSheet/bottomSheet.min.css
+340 silly gunzTarPerm extractEntry modules/closure/button/button.js
+341 silly gunzTarPerm extractEntry modules/closure/button/button.min.js
+342 silly gunzTarPerm extractEntry modules/closure/button/button-default-theme.css
+343 silly gunzTarPerm extractEntry modules/closure/button/button-default-theme.min.css
+344 info preinstall angular-ui-router@0.3.2
+345 silly install resolved []
+346 verbose about to build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+347 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+348 verbose linkStuff [ false,
+348 verbose linkStuff   false,
+348 verbose linkStuff   false,
+348 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules' ]
+349 info linkStuff angular-ui-router@0.3.2
+350 verbose linkBins angular-ui-router@0.3.2
+351 verbose linkMans angular-ui-router@0.3.2
+352 verbose rebuildBundles angular-ui-router@0.3.2
+353 info install angular-ui-router@0.3.2
+354 info postinstall angular-ui-router@0.3.2
+355 verbose unlock done using /home/aakash/.npm/_locks/angular-ui-router-2b9e2eca80b09102.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-ui-router
+356 silly gunzTarPerm extractEntry modules/closure/button/button.css
+357 silly gunzTarPerm extractEntry modules/closure/button/button.min.css
+358 silly gunzTarPerm extractEntry modules/closure/card/card.js
+359 silly gunzTarPerm extractEntry modules/closure/card/card.min.js
+360 silly gunzTarPerm extractEntry modules/closure/card/card-default-theme.css
+361 silly gunzTarPerm extractEntry modules/closure/card/card-default-theme.min.css
+362 silly gunzTarPerm extractEntry modules/closure/card/card.css
+363 silly gunzTarPerm extractEntry modules/closure/card/card.min.css
+364 silly gunzTarPerm extractEntry modules/closure/checkbox/checkbox.js
+365 silly gunzTarPerm extractEntry modules/closure/checkbox/checkbox.min.js
+366 silly gunzTarPerm extractEntry modules/closure/checkbox/checkbox-default-theme.css
+367 silly gunzTarPerm extractEntry modules/closure/checkbox/checkbox-default-theme.min.css
+368 silly gunzTarPerm extractEntry modules/closure/checkbox/checkbox.css
+369 silly gunzTarPerm extractEntry modules/closure/checkbox/checkbox.min.css
+370 silly gunzTarPerm extractEntry modules/closure/chips/chips.js
+371 silly gunzTarPerm extractEntry modules/closure/chips/chips.min.js
+372 silly gunzTarPerm extractEntry modules/closure/chips/chips-default-theme.css
+373 silly gunzTarPerm extractEntry modules/closure/chips/chips-default-theme.min.css
+374 silly gunzTarPerm extractEntry modules/closure/chips/chips.css
+375 silly gunzTarPerm extractEntry modules/closure/chips/chips.min.css
+376 silly gunzTarPerm extractEntry modules/closure/colors/colors.js
+377 silly gunzTarPerm extractEntry modules/closure/colors/colors.min.js
+378 silly gunzTarPerm extractEntry modules/closure/content/content.js
+379 silly gunzTarPerm extractEntry modules/closure/content/content.min.js
+380 silly gunzTarPerm extractEntry modules/closure/content/content-default-theme.css
+381 silly gunzTarPerm extractEntry modules/closure/content/content-default-theme.min.css
+382 silly gunzTarPerm extractEntry modules/closure/content/content.css
+383 silly gunzTarPerm extractEntry modules/closure/content/content.min.css
+384 silly gunzTarPerm extractEntry modules/closure/core/core.js
+385 silly gunzTarPerm extractEntry modules/closure/core/core.min.js
+386 silly gunzTarPerm extractEntry modules/closure/core/default-theme.js
+387 silly gunzTarPerm extractEntry modules/closure/core/core-default-theme.css
+388 silly gunzTarPerm extractEntry modules/closure/core/core-default-theme.min.css
+389 silly gunzTarPerm extractEntry modules/closure/core/core.css
+390 silly gunzTarPerm extractEntry modules/closure/core/core.min.css
+391 silly gunzTarPerm extractEntry modules/closure/datepicker/datepicker.js
+392 silly gunzTarPerm extractEntry modules/closure/datepicker/datepicker.min.js
+393 silly gunzTarPerm extractEntry modules/closure/datepicker/datepicker-default-theme.css
+394 silly gunzTarPerm extractEntry modules/closure/datepicker/datepicker-default-theme.min.css
+395 silly gunzTarPerm extractEntry modules/closure/datepicker/datepicker.css
+396 silly gunzTarPerm extractEntry modules/closure/datepicker/datepicker.min.css
+397 silly gunzTarPerm extractEntry modules/closure/dialog/dialog.js
+398 silly gunzTarPerm extractEntry modules/closure/dialog/dialog.min.js
+399 silly gunzTarPerm extractEntry modules/closure/dialog/dialog-default-theme.css
+400 silly gunzTarPerm extractEntry modules/closure/dialog/dialog-default-theme.min.css
+401 silly gunzTarPerm extractEntry modules/closure/dialog/dialog.css
+402 silly gunzTarPerm extractEntry modules/closure/dialog/dialog.min.css
+403 silly gunzTarPerm extractEntry modules/closure/divider/divider.js
+404 silly gunzTarPerm extractEntry modules/closure/divider/divider.min.js
+405 silly gunzTarPerm extractEntry modules/closure/divider/divider-default-theme.css
+406 silly gunzTarPerm extractEntry modules/closure/divider/divider-default-theme.min.css
+407 silly gunzTarPerm extractEntry modules/closure/divider/divider.css
+408 silly gunzTarPerm extractEntry modules/closure/divider/divider.min.css
+409 silly gunzTarPerm extractEntry modules/closure/fabActions/fabActions.js
+410 silly gunzTarPerm extractEntry modules/closure/fabActions/fabActions.min.js
+411 silly gunzTarPerm extractEntry modules/closure/fabSpeedDial/fabSpeedDial.js
+412 silly gunzTarPerm extractEntry modules/closure/fabSpeedDial/fabSpeedDial.min.js
+413 silly gunzTarPerm extractEntry modules/closure/fabSpeedDial/fabSpeedDial.css
+414 silly gunzTarPerm extractEntry modules/closure/fabSpeedDial/fabSpeedDial.min.css
+415 silly gunzTarPerm extractEntry modules/closure/fabToolbar/fabToolbar.js
+416 silly gunzTarPerm extractEntry modules/closure/fabToolbar/fabToolbar.min.js
+417 silly gunzTarPerm extractEntry modules/closure/fabToolbar/fabToolbar.css
+418 silly gunzTarPerm extractEntry modules/closure/fabToolbar/fabToolbar.min.css
+419 silly gunzTarPerm extractEntry modules/closure/fabTrigger/fabTrigger.js
+420 silly gunzTarPerm extractEntry modules/closure/fabTrigger/fabTrigger.min.js
+421 silly gunzTarPerm extractEntry modules/closure/gridList/gridList.js
+422 silly gunzTarPerm extractEntry modules/closure/gridList/gridList.min.js
+423 silly gunzTarPerm extractEntry modules/closure/gridList/gridList-default-theme.css
+424 silly gunzTarPerm extractEntry modules/closure/gridList/gridList.css
+425 silly gunzTarPerm extractEntry modules/closure/gridList/gridList.min.css
+426 silly gunzTarPerm extractEntry modules/closure/icon/icon.js
+427 silly gunzTarPerm extractEntry modules/closure/icon/icon.min.js
+428 silly gunzTarPerm extractEntry modules/closure/icon/icon-default-theme.css
+429 info preinstall angular@1.6.1
+430 silly install resolved []
+431 verbose about to build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+432 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+433 verbose linkStuff [ false,
+433 verbose linkStuff   false,
+433 verbose linkStuff   false,
+433 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules' ]
+434 info linkStuff angular@1.6.1
+435 verbose linkBins angular@1.6.1
+436 verbose linkMans angular@1.6.1
+437 verbose rebuildBundles angular@1.6.1
+438 info install angular@1.6.1
+439 info postinstall angular@1.6.1
+440 silly gunzTarPerm extractEntry modules/closure/icon/icon-default-theme.min.css
+441 verbose unlock done using /home/aakash/.npm/_locks/angular-1fb5b9056885445b.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular
+442 silly gunzTarPerm extractEntry modules/closure/icon/icon.css
+443 silly gunzTarPerm extractEntry modules/closure/icon/icon.min.css
+444 silly gunzTarPerm extractEntry modules/closure/input/input.js
+445 silly gunzTarPerm extractEntry modules/closure/input/input.min.js
+446 silly gunzTarPerm extractEntry modules/closure/input/input-default-theme.css
+447 silly gunzTarPerm extractEntry modules/closure/input/input-default-theme.min.css
+448 silly gunzTarPerm extractEntry modules/closure/input/input.css
+449 silly gunzTarPerm extractEntry modules/closure/input/input.min.css
+450 silly gunzTarPerm extractEntry modules/closure/list/list.js
+451 silly gunzTarPerm extractEntry modules/closure/list/list.min.js
+452 silly gunzTarPerm extractEntry modules/closure/list/list-default-theme.css
+453 silly gunzTarPerm extractEntry modules/closure/list/list-default-theme.min.css
+454 silly gunzTarPerm extractEntry modules/closure/list/list.css
+455 silly gunzTarPerm extractEntry modules/closure/list/list.min.css
+456 silly gunzTarPerm extractEntry modules/closure/backdrop/backdrop.js
+457 silly gunzTarPerm extractEntry modules/closure/backdrop/backdrop.min.js
+458 silly gunzTarPerm extractEntry modules/closure/backdrop/backdrop-default-theme.css
+459 silly gunzTarPerm extractEntry modules/closure/backdrop/backdrop-default-theme.min.css
+460 silly gunzTarPerm extractEntry modules/closure/backdrop/backdrop.css
+461 silly gunzTarPerm extractEntry modules/closure/backdrop/backdrop.min.css
+462 silly gunzTarPerm extractEntry modules/closure/menuBar/menuBar.js
+463 silly gunzTarPerm extractEntry modules/closure/menuBar/menuBar.min.js
+464 silly gunzTarPerm extractEntry modules/closure/menuBar/menuBar-default-theme.css
+465 silly gunzTarPerm extractEntry modules/closure/menuBar/menuBar-default-theme.min.css
+466 silly gunzTarPerm extractEntry modules/closure/menuBar/menuBar.css
+467 silly gunzTarPerm extractEntry modules/closure/menuBar/menuBar.min.css
+468 silly gunzTarPerm extractEntry modules/closure/navBar/navBar.js
+469 silly gunzTarPerm extractEntry modules/closure/navBar/navBar.min.js
+470 silly gunzTarPerm extractEntry modules/closure/navBar/navBar-default-theme.css
+471 silly gunzTarPerm extractEntry modules/closure/navBar/navBar-default-theme.min.css
+472 silly gunzTarPerm extractEntry modules/closure/navBar/navBar.css
+473 silly gunzTarPerm extractEntry modules/closure/navBar/navBar.min.css
+474 silly gunzTarPerm extractEntry modules/closure/panel/panel.js
+475 silly gunzTarPerm extractEntry modules/closure/panel/panel.min.js
+476 silly gunzTarPerm extractEntry modules/closure/panel/panel-default-theme.css
+477 silly gunzTarPerm extractEntry modules/closure/panel/panel-default-theme.min.css
+478 silly gunzTarPerm extractEntry modules/closure/panel/panel.css
+479 silly gunzTarPerm extractEntry modules/closure/panel/panel.min.css
+480 silly gunzTarPerm extractEntry modules/closure/progressCircular/progressCircular.js
+481 silly gunzTarPerm extractEntry modules/closure/progressCircular/progressCircular.min.js
+482 silly gunzTarPerm extractEntry modules/closure/progressCircular/progressCircular-default-theme.css
+483 silly gunzTarPerm extractEntry modules/closure/progressCircular/progressCircular-default-theme.min.css
+484 silly gunzTarPerm extractEntry modules/closure/progressCircular/progressCircular.css
+485 silly gunzTarPerm extractEntry modules/closure/progressCircular/progressCircular.min.css
+486 silly gunzTarPerm extractEntry modules/closure/progressLinear/progressLinear.js
+487 silly gunzTarPerm extractEntry modules/closure/progressLinear/progressLinear.min.js
+488 silly gunzTarPerm extractEntry modules/closure/progressLinear/progressLinear-default-theme.css
+489 silly gunzTarPerm extractEntry modules/closure/progressLinear/progressLinear-default-theme.min.css
+490 silly gunzTarPerm extractEntry modules/closure/progressLinear/progressLinear.css
+491 silly gunzTarPerm extractEntry modules/closure/progressLinear/progressLinear.min.css
+492 silly gunzTarPerm extractEntry modules/closure/radioButton/radioButton.js
+493 silly gunzTarPerm extractEntry modules/closure/radioButton/radioButton.min.js
+494 silly gunzTarPerm extractEntry modules/closure/radioButton/radioButton-default-theme.css
+495 silly gunzTarPerm extractEntry modules/closure/radioButton/radioButton-default-theme.min.css
+496 silly gunzTarPerm extractEntry modules/closure/radioButton/radioButton.css
+497 silly gunzTarPerm extractEntry modules/closure/radioButton/radioButton.min.css
+498 silly gunzTarPerm extractEntry modules/closure/select/select.js
+499 silly gunzTarPerm extractEntry modules/closure/select/select.min.js
+500 silly gunzTarPerm extractEntry modules/closure/select/select-default-theme.css
+501 silly gunzTarPerm extractEntry modules/closure/select/select-default-theme.min.css
+502 silly gunzTarPerm extractEntry modules/closure/select/select.css
+503 silly gunzTarPerm extractEntry modules/closure/select/select.min.css
+504 silly gunzTarPerm extractEntry modules/closure/showHide/showHide.js
+505 silly gunzTarPerm extractEntry modules/closure/showHide/showHide.min.js
+506 silly gunzTarPerm extractEntry modules/closure/sidenav/sidenav.js
+507 silly gunzTarPerm extractEntry modules/closure/sidenav/sidenav.min.js
+508 silly gunzTarPerm extractEntry modules/closure/sidenav/sidenav-default-theme.css
+509 silly gunzTarPerm extractEntry modules/closure/sidenav/sidenav-default-theme.min.css
+510 silly gunzTarPerm extractEntry modules/closure/sidenav/sidenav.css
+511 silly gunzTarPerm extractEntry modules/closure/sidenav/sidenav.min.css
+512 silly gunzTarPerm extractEntry modules/closure/slider/slider.js
+513 silly gunzTarPerm extractEntry modules/closure/slider/slider.min.js
+514 silly gunzTarPerm extractEntry modules/closure/slider/slider-default-theme.css
+515 silly gunzTarPerm extractEntry modules/closure/slider/slider-default-theme.min.css
+516 silly gunzTarPerm extractEntry modules/closure/slider/slider.css
+517 silly gunzTarPerm extractEntry modules/closure/slider/slider.min.css
+518 silly gunzTarPerm extractEntry modules/closure/sticky/sticky.js
+519 silly gunzTarPerm extractEntry modules/closure/sticky/sticky.min.js
+520 silly gunzTarPerm extractEntry modules/closure/sticky/sticky.css
+521 silly gunzTarPerm extractEntry modules/closure/sticky/sticky.min.css
+522 silly gunzTarPerm extractEntry modules/closure/subheader/subheader.js
+523 silly gunzTarPerm extractEntry modules/closure/subheader/subheader.min.js
+524 silly gunzTarPerm extractEntry modules/closure/subheader/subheader-default-theme.css
+525 silly gunzTarPerm extractEntry modules/closure/subheader/subheader-default-theme.min.css
+526 silly gunzTarPerm extractEntry modules/closure/subheader/subheader.css
+527 silly gunzTarPerm extractEntry modules/closure/subheader/subheader.min.css
+528 silly gunzTarPerm extractEntry modules/closure/swipe/swipe.js
+529 silly gunzTarPerm extractEntry modules/closure/swipe/swipe.min.js
+530 silly gunzTarPerm extractEntry modules/closure/switch/switch.js
+531 silly gunzTarPerm extractEntry modules/closure/switch/switch.min.js
+532 silly gunzTarPerm extractEntry modules/closure/switch/switch-default-theme.css
+533 silly gunzTarPerm extractEntry modules/closure/switch/switch-default-theme.min.css
+534 silly gunzTarPerm extractEntry modules/closure/switch/switch.css
+535 silly gunzTarPerm extractEntry modules/closure/switch/switch.min.css
+536 silly gunzTarPerm extractEntry modules/closure/tabs/tabs.js
+537 silly gunzTarPerm extractEntry modules/closure/tabs/tabs.min.js
+538 silly gunzTarPerm extractEntry modules/closure/tabs/tabs-arrow.svg
+539 silly gunzTarPerm extractEntry modules/closure/tabs/tabs-default-theme.css
+540 silly gunzTarPerm extractEntry modules/closure/tabs/tabs-default-theme.min.css
+541 silly gunzTarPerm extractEntry modules/closure/tabs/tabs.css
+542 silly gunzTarPerm extractEntry modules/closure/tabs/tabs.min.css
+543 silly gunzTarPerm extractEntry modules/closure/textField/textField.js
+544 silly gunzTarPerm extractEntry modules/closure/textField/textField-default-theme.css
+545 silly gunzTarPerm extractEntry modules/closure/textField/textField.css
+546 silly gunzTarPerm extractEntry modules/closure/toast/toast.js
+547 silly gunzTarPerm extractEntry modules/closure/toast/toast.min.js
+548 silly gunzTarPerm extractEntry modules/closure/toast/toast-default-theme.css
+549 silly gunzTarPerm extractEntry modules/closure/toast/toast-default-theme.min.css
+550 silly gunzTarPerm extractEntry modules/closure/toast/toast.css
+551 silly gunzTarPerm extractEntry modules/closure/toast/toast.min.css
+552 silly gunzTarPerm extractEntry modules/closure/toolbar/toolbar.js
+553 silly gunzTarPerm extractEntry modules/closure/toolbar/toolbar.min.js
+554 silly gunzTarPerm extractEntry modules/closure/toolbar/toolbar-default-theme.css
+555 silly gunzTarPerm extractEntry modules/closure/toolbar/toolbar-default-theme.min.css
+556 silly gunzTarPerm extractEntry modules/closure/toolbar/toolbar.css
+557 silly gunzTarPerm extractEntry modules/closure/toolbar/toolbar.min.css
+558 silly gunzTarPerm extractEntry modules/closure/tooltip/tooltip.js
+559 silly gunzTarPerm extractEntry modules/closure/tooltip/tooltip.min.js
+560 silly gunzTarPerm extractEntry modules/closure/tooltip/tooltip-default-theme.css
+561 silly gunzTarPerm extractEntry modules/closure/tooltip/tooltip-default-theme.min.css
+562 silly gunzTarPerm extractEntry modules/closure/tooltip/tooltip.css
+563 silly gunzTarPerm extractEntry modules/closure/tooltip/tooltip.min.css
+564 silly gunzTarPerm extractEntry modules/closure/virtualRepeat/virtualRepeat.js
+565 silly gunzTarPerm extractEntry modules/closure/virtualRepeat/virtualRepeat.min.js
+566 silly gunzTarPerm extractEntry modules/closure/virtualRepeat/virtualRepeat.css
+567 silly gunzTarPerm extractEntry modules/closure/virtualRepeat/virtualRepeat.min.css
+568 silly gunzTarPerm extractEntry modules/closure/whiteframe/whiteframe.js
+569 silly gunzTarPerm extractEntry modules/closure/whiteframe/whiteframe.min.js
+570 silly gunzTarPerm extractEntry modules/closure/whiteframe/whiteframe.css
+571 silly gunzTarPerm extractEntry modules/closure/whiteframe/whiteframe.min.css
+572 silly gunzTarPerm extractEntry modules/js/menu/menu.js
+573 silly gunzTarPerm extractEntry modules/js/menu/menu.min.js
+574 silly gunzTarPerm extractEntry modules/js/menu/bower.json
+575 silly gunzTarPerm extractEntry modules/js/menu/menu-default-theme.css
+576 silly gunzTarPerm extractEntry modules/js/menu/menu-default-theme.min.css
+577 silly gunzTarPerm extractEntry modules/js/menu/menu.css
+578 silly gunzTarPerm extractEntry modules/js/menu/menu.min.css
+579 silly gunzTarPerm extractEntry modules/js/autocomplete/autocomplete.js
+580 silly gunzTarPerm extractEntry modules/js/autocomplete/autocomplete.min.js
+581 silly gunzTarPerm extractEntry modules/js/autocomplete/autocomplete-default-theme.css
+582 silly gunzTarPerm extractEntry modules/js/autocomplete/autocomplete-default-theme.min.css
+583 silly gunzTarPerm extractEntry modules/js/autocomplete/autocomplete.css
+584 silly gunzTarPerm extractEntry modules/js/autocomplete/autocomplete.min.css
+585 silly gunzTarPerm extractEntry modules/js/autocomplete/bower.json
+586 silly gunzTarPerm extractEntry modules/js/bottomSheet/bottomSheet.js
+587 silly gunzTarPerm extractEntry modules/js/bottomSheet/bottomSheet.min.js
+588 silly gunzTarPerm extractEntry modules/js/bottomSheet/bottomSheet-default-theme.css
+589 silly gunzTarPerm extractEntry modules/js/bottomSheet/bottomSheet-default-theme.min.css
+590 silly gunzTarPerm extractEntry modules/js/bottomSheet/bottomSheet.css
+591 silly gunzTarPerm extractEntry modules/js/bottomSheet/bottomSheet.min.css
+592 silly gunzTarPerm extractEntry modules/js/bottomSheet/bower.json
+593 silly gunzTarPerm extractEntry modules/js/button/button.js
+594 silly gunzTarPerm extractEntry modules/js/button/button.min.js
+595 silly gunzTarPerm extractEntry modules/js/button/bower.json
+596 silly gunzTarPerm extractEntry modules/js/button/button-default-theme.css
+597 silly gunzTarPerm extractEntry modules/js/button/button-default-theme.min.css
+598 silly gunzTarPerm extractEntry modules/js/button/button.css
+599 silly gunzTarPerm extractEntry modules/js/button/button.min.css
+600 silly gunzTarPerm extractEntry modules/js/card/card.js
+601 silly gunzTarPerm extractEntry modules/js/card/card.min.js
+602 silly gunzTarPerm extractEntry modules/js/card/bower.json
+603 silly gunzTarPerm extractEntry modules/js/card/card-default-theme.css
+604 silly gunzTarPerm extractEntry modules/js/card/card-default-theme.min.css
+605 silly gunzTarPerm extractEntry modules/js/card/card.css
+606 silly gunzTarPerm extractEntry modules/js/card/card.min.css
+607 silly gunzTarPerm extractEntry modules/js/checkbox/checkbox.js
+608 silly gunzTarPerm extractEntry modules/js/checkbox/checkbox.min.js
+609 silly gunzTarPerm extractEntry modules/js/checkbox/bower.json
+610 silly gunzTarPerm extractEntry modules/js/checkbox/checkbox-default-theme.css
+611 silly gunzTarPerm extractEntry modules/js/checkbox/checkbox-default-theme.min.css
+612 silly gunzTarPerm extractEntry modules/js/checkbox/checkbox.css
+613 silly gunzTarPerm extractEntry modules/js/checkbox/checkbox.min.css
+614 silly gunzTarPerm extractEntry modules/js/chips/chips.js
+615 silly gunzTarPerm extractEntry modules/js/chips/chips.min.js
+616 silly gunzTarPerm extractEntry modules/js/chips/bower.json
+617 silly gunzTarPerm extractEntry modules/js/chips/chips-default-theme.css
+618 silly gunzTarPerm extractEntry modules/js/chips/chips-default-theme.min.css
+619 silly gunzTarPerm extractEntry modules/js/chips/chips.css
+620 silly gunzTarPerm extractEntry modules/js/chips/chips.min.css
+621 silly gunzTarPerm extractEntry modules/js/colors/colors.js
+622 silly gunzTarPerm extractEntry modules/js/colors/colors.min.js
+623 silly gunzTarPerm extractEntry modules/js/colors/bower.json
+624 silly gunzTarPerm extractEntry modules/js/content/content.js
+625 silly gunzTarPerm extractEntry modules/js/content/content.min.js
+626 silly gunzTarPerm extractEntry modules/js/content/bower.json
+627 silly gunzTarPerm extractEntry modules/js/content/content-default-theme.css
+628 silly gunzTarPerm extractEntry modules/js/content/content-default-theme.min.css
+629 silly gunzTarPerm extractEntry modules/js/content/content.css
+630 silly gunzTarPerm extractEntry modules/js/content/content.min.css
+631 silly gunzTarPerm extractEntry modules/js/core/core.js
+632 silly gunzTarPerm extractEntry modules/js/core/core.min.js
+633 silly gunzTarPerm extractEntry modules/js/core/default-theme.js
+634 silly gunzTarPerm extractEntry modules/js/core/bower.json
+635 silly gunzTarPerm extractEntry modules/js/core/core-default-theme.css
+636 silly gunzTarPerm extractEntry modules/js/core/core-default-theme.min.css
+637 silly gunzTarPerm extractEntry modules/js/core/core.css
+638 silly gunzTarPerm extractEntry modules/js/core/core.min.css
+639 silly gunzTarPerm extractEntry modules/js/datepicker/datepicker.js
+640 silly gunzTarPerm extractEntry modules/js/datepicker/datepicker.min.js
+641 silly gunzTarPerm extractEntry modules/js/datepicker/bower.json
+642 silly gunzTarPerm extractEntry modules/js/datepicker/datepicker-default-theme.css
+643 silly gunzTarPerm extractEntry modules/js/datepicker/datepicker-default-theme.min.css
+644 silly gunzTarPerm extractEntry modules/js/datepicker/datepicker.css
+645 silly gunzTarPerm extractEntry modules/js/datepicker/datepicker.min.css
+646 silly gunzTarPerm extractEntry modules/js/dialog/dialog.js
+647 silly gunzTarPerm extractEntry modules/js/dialog/dialog.min.js
+648 silly gunzTarPerm extractEntry modules/js/dialog/bower.json
+649 silly gunzTarPerm extractEntry modules/js/dialog/dialog-default-theme.css
+650 silly gunzTarPerm extractEntry modules/js/dialog/dialog-default-theme.min.css
+651 silly gunzTarPerm extractEntry modules/js/dialog/dialog.css
+652 silly gunzTarPerm extractEntry modules/js/dialog/dialog.min.css
+653 silly gunzTarPerm extractEntry modules/js/divider/divider.js
+654 silly gunzTarPerm extractEntry modules/js/divider/divider.min.js
+655 silly gunzTarPerm extractEntry modules/js/divider/bower.json
+656 silly gunzTarPerm extractEntry modules/js/divider/divider-default-theme.css
+657 silly gunzTarPerm extractEntry modules/js/divider/divider-default-theme.min.css
+658 silly gunzTarPerm extractEntry modules/js/divider/divider.css
+659 silly gunzTarPerm extractEntry modules/js/divider/divider.min.css
+660 silly gunzTarPerm extractEntry modules/js/fabActions/fabActions.js
+661 silly gunzTarPerm extractEntry modules/js/fabActions/fabActions.min.js
+662 silly gunzTarPerm extractEntry modules/js/fabActions/bower.json
+663 silly gunzTarPerm extractEntry modules/js/fabSpeedDial/fabSpeedDial.js
+664 silly gunzTarPerm extractEntry modules/js/fabSpeedDial/fabSpeedDial.min.js
+665 silly gunzTarPerm extractEntry modules/js/fabSpeedDial/bower.json
+666 silly gunzTarPerm extractEntry modules/js/fabSpeedDial/fabSpeedDial.css
+667 silly gunzTarPerm extractEntry modules/js/fabSpeedDial/fabSpeedDial.min.css
+668 silly gunzTarPerm extractEntry modules/js/fabToolbar/fabToolbar.js
+669 silly gunzTarPerm extractEntry modules/js/fabToolbar/fabToolbar.min.js
+670 silly gunzTarPerm extractEntry modules/js/fabToolbar/bower.json
+671 silly gunzTarPerm extractEntry modules/js/fabToolbar/fabToolbar.css
+672 silly gunzTarPerm extractEntry modules/js/fabToolbar/fabToolbar.min.css
+673 silly gunzTarPerm extractEntry modules/js/fabTrigger/fabTrigger.js
+674 silly gunzTarPerm extractEntry modules/js/fabTrigger/fabTrigger.min.js
+675 silly gunzTarPerm extractEntry modules/js/fabTrigger/bower.json
+676 silly gunzTarPerm extractEntry modules/js/gridList/gridList.js
+677 silly gunzTarPerm extractEntry modules/js/gridList/gridList.min.js
+678 silly gunzTarPerm extractEntry modules/js/gridList/bower.json
+679 silly gunzTarPerm extractEntry modules/js/gridList/gridList.css
+680 silly gunzTarPerm extractEntry modules/js/gridList/gridList.min.css
+681 silly gunzTarPerm extractEntry modules/js/icon/icon.js
+682 silly gunzTarPerm extractEntry modules/js/icon/icon.min.js
+683 silly gunzTarPerm extractEntry modules/js/icon/bower.json
+684 silly gunzTarPerm extractEntry modules/js/icon/icon-default-theme.css
+685 silly gunzTarPerm extractEntry modules/js/icon/icon-default-theme.min.css
+686 silly gunzTarPerm extractEntry modules/js/icon/icon.css
+687 silly gunzTarPerm extractEntry modules/js/icon/icon.min.css
+688 silly gunzTarPerm extractEntry modules/js/input/input.js
+689 silly gunzTarPerm extractEntry modules/js/input/input.min.js
+690 silly gunzTarPerm extractEntry modules/js/input/bower.json
+691 silly gunzTarPerm extractEntry modules/js/input/input-default-theme.css
+692 silly gunzTarPerm extractEntry modules/js/input/input-default-theme.min.css
+693 silly gunzTarPerm extractEntry modules/js/input/input.css
+694 silly gunzTarPerm extractEntry modules/js/input/input.min.css
+695 silly gunzTarPerm extractEntry modules/js/list/list.js
+696 silly gunzTarPerm extractEntry modules/js/list/list.min.js
+697 silly gunzTarPerm extractEntry modules/js/list/bower.json
+698 silly gunzTarPerm extractEntry modules/js/list/list-default-theme.css
+699 silly gunzTarPerm extractEntry modules/js/list/list-default-theme.min.css
+700 silly gunzTarPerm extractEntry modules/js/list/list.css
+701 silly gunzTarPerm extractEntry modules/js/list/list.min.css
+702 silly gunzTarPerm extractEntry modules/js/backdrop/backdrop.js
+703 silly gunzTarPerm extractEntry modules/js/backdrop/backdrop.min.js
+704 silly gunzTarPerm extractEntry modules/js/backdrop/backdrop-default-theme.css
+705 silly gunzTarPerm extractEntry modules/js/backdrop/backdrop-default-theme.min.css
+706 silly gunzTarPerm extractEntry modules/js/backdrop/backdrop.css
+707 silly gunzTarPerm extractEntry modules/js/backdrop/backdrop.min.css
+708 silly gunzTarPerm extractEntry modules/js/backdrop/bower.json
+709 silly gunzTarPerm extractEntry modules/js/menuBar/menuBar.js
+710 silly gunzTarPerm extractEntry modules/js/menuBar/menuBar.min.js
+711 silly gunzTarPerm extractEntry modules/js/menuBar/bower.json
+712 silly gunzTarPerm extractEntry modules/js/menuBar/menuBar-default-theme.css
+713 silly gunzTarPerm extractEntry modules/js/menuBar/menuBar-default-theme.min.css
+714 silly gunzTarPerm extractEntry modules/js/menuBar/menuBar.css
+715 silly gunzTarPerm extractEntry modules/js/menuBar/menuBar.min.css
+716 silly gunzTarPerm extractEntry modules/js/navBar/navBar.js
+717 silly gunzTarPerm extractEntry modules/js/navBar/navBar.min.js
+718 silly gunzTarPerm extractEntry modules/js/navBar/bower.json
+719 silly gunzTarPerm extractEntry modules/js/navBar/navBar-default-theme.css
+720 silly gunzTarPerm extractEntry modules/js/navBar/navBar-default-theme.min.css
+721 silly gunzTarPerm extractEntry modules/js/navBar/navBar.css
+722 silly gunzTarPerm extractEntry modules/js/navBar/navBar.min.css
+723 silly gunzTarPerm extractEntry modules/js/panel/panel.js
+724 silly gunzTarPerm extractEntry modules/js/panel/panel.min.js
+725 silly gunzTarPerm extractEntry modules/js/panel/bower.json
+726 silly gunzTarPerm extractEntry modules/js/panel/panel-default-theme.css
+727 silly gunzTarPerm extractEntry modules/js/panel/panel-default-theme.min.css
+728 silly gunzTarPerm extractEntry modules/js/panel/panel.css
+729 silly gunzTarPerm extractEntry modules/js/panel/panel.min.css
+730 silly gunzTarPerm extractEntry modules/js/progressCircular/progressCircular.js
+731 silly gunzTarPerm extractEntry modules/js/progressCircular/progressCircular.min.js
+732 silly gunzTarPerm extractEntry modules/js/progressCircular/bower.json
+733 silly gunzTarPerm extractEntry modules/js/progressCircular/progressCircular-default-theme.css
+734 silly gunzTarPerm extractEntry modules/js/progressCircular/progressCircular-default-theme.min.css
+735 silly gunzTarPerm extractEntry modules/js/progressCircular/progressCircular.css
+736 silly gunzTarPerm extractEntry modules/js/progressCircular/progressCircular.min.css
+737 silly gunzTarPerm extractEntry modules/js/progressLinear/progressLinear.js
+738 silly gunzTarPerm extractEntry modules/js/progressLinear/progressLinear.min.js
+739 silly gunzTarPerm extractEntry modules/js/progressLinear/bower.json
+740 silly gunzTarPerm extractEntry modules/js/progressLinear/progressLinear-default-theme.css
+741 silly gunzTarPerm extractEntry modules/js/progressLinear/progressLinear-default-theme.min.css
+742 silly gunzTarPerm extractEntry modules/js/progressLinear/progressLinear.css
+743 silly gunzTarPerm extractEntry modules/js/progressLinear/progressLinear.min.css
+744 silly gunzTarPerm extractEntry modules/js/radioButton/radioButton.js
+745 silly gunzTarPerm extractEntry modules/js/radioButton/radioButton.min.js
+746 silly gunzTarPerm extractEntry modules/js/radioButton/bower.json
+747 silly gunzTarPerm extractEntry modules/js/radioButton/radioButton-default-theme.css
+748 silly gunzTarPerm extractEntry modules/js/radioButton/radioButton-default-theme.min.css
+749 silly gunzTarPerm extractEntry modules/js/radioButton/radioButton.css
+750 silly gunzTarPerm extractEntry modules/js/radioButton/radioButton.min.css
+751 silly gunzTarPerm extractEntry modules/js/select/select.js
+752 silly gunzTarPerm extractEntry modules/js/select/select.min.js
+753 silly gunzTarPerm extractEntry modules/js/select/bower.json
+754 silly gunzTarPerm extractEntry modules/js/select/select-default-theme.css
+755 silly gunzTarPerm extractEntry modules/js/select/select-default-theme.min.css
+756 silly gunzTarPerm extractEntry modules/js/select/select.css
+757 silly gunzTarPerm extractEntry modules/js/select/select.min.css
+758 silly gunzTarPerm extractEntry modules/js/showHide/showHide.js
+759 silly gunzTarPerm extractEntry modules/js/showHide/showHide.min.js
+760 silly gunzTarPerm extractEntry modules/js/showHide/bower.json
+761 silly gunzTarPerm extractEntry modules/js/sidenav/sidenav.js
+762 silly gunzTarPerm extractEntry modules/js/sidenav/sidenav.min.js
+763 silly gunzTarPerm extractEntry modules/js/sidenav/bower.json
+764 silly gunzTarPerm extractEntry modules/js/sidenav/sidenav-default-theme.css
+765 silly gunzTarPerm extractEntry modules/js/sidenav/sidenav-default-theme.min.css
+766 silly gunzTarPerm extractEntry modules/js/sidenav/sidenav.css
+767 silly gunzTarPerm extractEntry modules/js/sidenav/sidenav.min.css
+768 silly gunzTarPerm extractEntry modules/js/slider/slider.js
+769 silly gunzTarPerm extractEntry modules/js/slider/slider.min.js
+770 silly gunzTarPerm extractEntry modules/js/slider/bower.json
+771 silly gunzTarPerm extractEntry modules/js/slider/slider-default-theme.css
+772 silly gunzTarPerm extractEntry modules/js/slider/slider-default-theme.min.css
+773 silly gunzTarPerm extractEntry modules/js/slider/slider.css
+774 silly gunzTarPerm extractEntry modules/js/slider/slider.min.css
+775 silly gunzTarPerm extractEntry modules/js/sticky/sticky.js
+776 silly gunzTarPerm extractEntry modules/js/sticky/sticky.min.js
+777 silly gunzTarPerm extractEntry modules/js/sticky/bower.json
+778 silly gunzTarPerm extractEntry modules/js/sticky/sticky.css
+779 silly gunzTarPerm extractEntry modules/js/sticky/sticky.min.css
+780 silly gunzTarPerm extractEntry modules/js/subheader/subheader.js
+781 silly gunzTarPerm extractEntry modules/js/subheader/subheader.min.js
+782 silly gunzTarPerm extractEntry modules/js/subheader/bower.json
+783 silly gunzTarPerm extractEntry modules/js/subheader/subheader-default-theme.css
+784 silly gunzTarPerm extractEntry modules/js/subheader/subheader-default-theme.min.css
+785 silly gunzTarPerm extractEntry modules/js/subheader/subheader.css
+786 silly gunzTarPerm extractEntry modules/js/subheader/subheader.min.css
+787 silly gunzTarPerm extractEntry modules/js/swipe/swipe.js
+788 silly gunzTarPerm extractEntry modules/js/swipe/swipe.min.js
+789 silly gunzTarPerm extractEntry modules/js/swipe/bower.json
+790 silly gunzTarPerm extractEntry modules/js/switch/switch.js
+791 silly gunzTarPerm extractEntry modules/js/switch/switch.min.js
+792 silly gunzTarPerm extractEntry modules/js/switch/bower.json
+793 silly gunzTarPerm extractEntry modules/js/switch/switch-default-theme.css
+794 silly gunzTarPerm extractEntry modules/js/switch/switch-default-theme.min.css
+795 silly gunzTarPerm extractEntry modules/js/switch/switch.css
+796 silly gunzTarPerm extractEntry modules/js/switch/switch.min.css
+797 silly gunzTarPerm extractEntry modules/js/tabs/tabs.js
+798 silly gunzTarPerm extractEntry modules/js/tabs/tabs.min.js
+799 silly gunzTarPerm extractEntry modules/js/tabs/bower.json
+800 silly gunzTarPerm extractEntry modules/js/tabs/tabs-default-theme.css
+801 silly gunzTarPerm extractEntry modules/js/tabs/tabs-default-theme.min.css
+802 silly gunzTarPerm extractEntry modules/js/tabs/tabs.css
+803 silly gunzTarPerm extractEntry modules/js/tabs/tabs.min.css
+804 silly gunzTarPerm extractEntry modules/js/textField/textField.js
+805 silly gunzTarPerm extractEntry modules/js/textField/textField.min.js
+806 silly gunzTarPerm extractEntry modules/js/textField/bower.json
+807 silly gunzTarPerm extractEntry modules/js/textField/textField-default-theme.css
+808 silly gunzTarPerm extractEntry modules/js/textField/textField-default-theme.min.css
+809 silly gunzTarPerm extractEntry modules/js/textField/textField.css
+810 silly gunzTarPerm extractEntry modules/js/textField/textField.min.css
+811 silly gunzTarPerm extractEntry modules/js/toast/toast.js
+812 silly gunzTarPerm extractEntry modules/js/toast/toast.min.js
+813 silly gunzTarPerm extractEntry modules/js/toast/bower.json
+814 silly gunzTarPerm extractEntry modules/js/toast/toast-default-theme.css
+815 silly gunzTarPerm extractEntry modules/js/toast/toast-default-theme.min.css
+816 silly gunzTarPerm extractEntry modules/js/toast/toast.css
+817 silly gunzTarPerm extractEntry modules/js/toast/toast.min.css
+818 silly gunzTarPerm extractEntry modules/js/toolbar/toolbar.js
+819 silly gunzTarPerm extractEntry modules/js/toolbar/toolbar.min.js
+820 silly gunzTarPerm extractEntry modules/js/toolbar/bower.json
+821 silly gunzTarPerm extractEntry modules/js/toolbar/toolbar-default-theme.css
+822 silly gunzTarPerm extractEntry modules/js/toolbar/toolbar-default-theme.min.css
+823 silly gunzTarPerm extractEntry modules/js/toolbar/toolbar.css
+824 silly gunzTarPerm extractEntry modules/js/toolbar/toolbar.min.css
+825 silly gunzTarPerm extractEntry modules/js/tooltip/tooltip.js
+826 silly gunzTarPerm extractEntry modules/js/tooltip/tooltip.min.js
+827 silly gunzTarPerm extractEntry modules/js/tooltip/bower.json
+828 silly gunzTarPerm extractEntry modules/js/tooltip/tooltip-default-theme.css
+829 silly gunzTarPerm extractEntry modules/js/tooltip/tooltip-default-theme.min.css
+830 silly gunzTarPerm extractEntry modules/js/tooltip/tooltip.css
+831 silly gunzTarPerm extractEntry modules/js/tooltip/tooltip.min.css
+832 silly gunzTarPerm extractEntry modules/js/virtualRepeat/virtualRepeat.js
+833 silly gunzTarPerm extractEntry modules/js/virtualRepeat/virtualRepeat.min.js
+834 silly gunzTarPerm extractEntry modules/js/virtualRepeat/bower.json
+835 silly gunzTarPerm extractEntry modules/js/virtualRepeat/virtualRepeat.css
+836 silly gunzTarPerm extractEntry modules/js/virtualRepeat/virtualRepeat.min.css
+837 silly gunzTarPerm extractEntry modules/js/whiteframe/whiteframe.js
+838 silly gunzTarPerm extractEntry modules/js/whiteframe/whiteframe.min.js
+839 silly gunzTarPerm extractEntry modules/js/whiteframe/bower.json
+840 silly gunzTarPerm extractEntry modules/js/whiteframe/whiteframe.css
+841 silly gunzTarPerm extractEntry modules/js/whiteframe/whiteframe.min.css
+842 silly gunzTarPerm extractEntry modules/layouts/angular-material.layout-attributes.css
+843 silly gunzTarPerm extractEntry modules/layouts/angular-material.layout-attributes.min.css
+844 silly gunzTarPerm extractEntry modules/layouts/angular-material.layouts.css
+845 silly gunzTarPerm extractEntry modules/layouts/angular-material.layouts.ie_fixes.css
+846 silly gunzTarPerm extractEntry modules/layouts/angular-material.layouts.min.css
+847 silly gunzTarPerm extractEntry modules/scss/angular-material.layout-attributes.scss
+848 silly gunzTarPerm extractEntry modules/scss/angular-material.layouts.scss
+849 silly gunzTarPerm extractEntry modules/scss/angular-material.scss
+850 silly gunzTarPerm extractEntry angular-material.min.css
+851 info preinstall angular-material@1.1.1
+852 silly prepareForInstallMany adding angular@>=1.3 <1.6 from angular-material peerDependencies
+853 silly prepareForInstallMany adding angular-animate@>=1.3 <1.6 from angular-material peerDependencies
+854 silly prepareForInstallMany adding angular-aria@>=1.3 <1.6 from angular-material peerDependencies
+855 warn peerDependencies The peer dependency angular@>=1.3 <1.6 included from angular-material will no
+856 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+857 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+858 warn peerDependencies The peer dependency angular-animate@>=1.3 <1.6 included from angular-material will no
+859 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+860 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+861 warn peerDependencies The peer dependency angular-aria@>=1.3 <1.6 included from angular-material will no
+862 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+863 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+864 silly install resolved []
+865 verbose about to build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+866 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+867 verbose linkStuff [ false,
+867 verbose linkStuff   false,
+867 verbose linkStuff   false,
+867 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules' ]
+868 info linkStuff angular-material@1.1.1
+869 verbose linkBins angular-material@1.1.1
+870 verbose linkMans angular-material@1.1.1
+871 verbose rebuildBundles angular-material@1.1.1
+872 info install angular-material@1.1.1
+873 info postinstall angular-material@1.1.1
+874 silly cache add args [ 'angular-aria@>=1.3 <1.6', null ]
+875 verbose cache add spec angular-aria@>=1.3 <1.6
+876 silly cache add parsed spec { raw: 'angular-aria@>=1.3 <1.6',
+876 silly cache add   scope: null,
+876 silly cache add   name: 'angular-aria',
+876 silly cache add   rawSpec: '>=1.3 <1.6',
+876 silly cache add   spec: '>=1.3.0 <1.6.0',
+876 silly cache add   type: 'range' }
+877 verbose addNamed angular-aria@>=1.3.0 <1.6.0
+878 silly addNamed semver.valid null
+879 silly addNamed semver.validRange >=1.3.0 <1.6.0
+880 silly addNameRange { name: 'angular-aria', range: '>=1.3.0 <1.6.0', hasData: false }
+881 silly mapToRegistry name angular-aria
+882 silly mapToRegistry using default registry
+883 silly mapToRegistry registry https://registry.npmjs.org/
+884 silly mapToRegistry uri https://registry.npmjs.org/angular-aria
+885 verbose addNameRange registry:https://registry.npmjs.org/angular-aria not in flight; fetching
+886 verbose already installed skipping angular@>=1.3 <1.6 /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+887 verbose get https://registry.npmjs.org/angular-aria not expired, no request
+888 silly addNameRange number 2 { name: 'angular-aria', range: '>=1.3.0 <1.6.0', hasData: true }
+889 silly addNameRange versions [ 'angular-aria',
+889 silly addNameRange   [ '1.3.0-rc.5',
+889 silly addNameRange     '1.3.0',
+889 silly addNameRange     '1.3.1',
+889 silly addNameRange     '1.3.2',
+889 silly addNameRange     '1.3.3',
+889 silly addNameRange     '1.3.4',
+889 silly addNameRange     '1.3.5',
+889 silly addNameRange     '1.3.6',
+889 silly addNameRange     '1.3.7',
+889 silly addNameRange     '1.3.8',
+889 silly addNameRange     '1.4.0-beta.0',
+889 silly addNameRange     '1.3.9',
+889 silly addNameRange     '1.3.10',
+889 silly addNameRange     '1.4.0-beta.1',
+889 silly addNameRange     '1.4.0-beta.2',
+889 silly addNameRange     '1.3.11',
+889 silly addNameRange     '1.4.0-beta.3',
+889 silly addNameRange     '1.3.12',
+889 silly addNameRange     '1.3.13',
+889 silly addNameRange     '1.4.0-beta.4',
+889 silly addNameRange     '1.3.14',
+889 silly addNameRange     '1.4.0-beta.5',
+889 silly addNameRange     '1.4.0-beta.6',
+889 silly addNameRange     '1.3.15',
+889 silly addNameRange     '1.4.0-rc.0',
+889 silly addNameRange     '1.4.0-rc.1',
+889 silly addNameRange     '1.4.0-rc.2',
+889 silly addNameRange     '1.4.0',
+889 silly addNameRange     '1.3.16',
+889 silly addNameRange     '1.4.1',
+889 silly addNameRange     '1.4.2',
+889 silly addNameRange     '1.3.17',
+889 silly addNameRange     '1.4.3',
+889 silly addNameRange     '1.4.4',
+889 silly addNameRange     '1.3.18',
+889 silly addNameRange     '1.4.5',
+889 silly addNameRange     '1.3.19',
+889 silly addNameRange     '1.4.6',
+889 silly addNameRange     '1.5.0-beta.0',
+889 silly addNameRange     '1.3.20',
+889 silly addNameRange     '1.4.7',
+889 silly addNameRange     '1.5.0-beta.2',
+889 silly addNameRange     '1.4.8',
+889 silly addNameRange     '1.5.0-rc.0',
+889 silly addNameRange     '1.5.0-rc.1',
+889 silly addNameRange     '1.4.9',
+889 silly addNameRange     '1.5.0-rc.2',
+889 silly addNameRange     '1.5.0',
+889 silly addNameRange     '1.5.1',
+889 silly addNameRange     '1.4.10',
+889 silly addNameRange     '1.5.2',
+889 silly addNameRange     '1.5.3',
+889 silly addNameRange     '1.5.5',
+889 silly addNameRange     '1.4.11',
+889 silly addNameRange     '1.5.6',
+889 silly addNameRange     '1.4.12',
+889 silly addNameRange     '1.5.7',
+889 silly addNameRange     '1.5.8',
+889 silly addNameRange     '1.4.13',
+889 silly addNameRange     '1.4.14',
+889 silly addNameRange     '1.6.0-rc.0',
+889 silly addNameRange     '1.6.0-rc.1',
+889 silly addNameRange     '1.5.9',
+889 silly addNameRange     '1.6.0-rc.2',
+889 silly addNameRange     '1.6.0',
+889 silly addNameRange     '1.5.10',
+889 silly addNameRange     '1.6.1' ] ]
+890 verbose addNamed angular-aria@1.5.10
+891 silly addNamed semver.valid 1.5.10
+892 silly addNamed semver.validRange 1.5.10
+893 silly cache add args [ 'angular-animate@>=1.3 <1.6', null ]
+894 verbose cache add spec angular-animate@>=1.3 <1.6
+895 silly cache add parsed spec { raw: 'angular-animate@>=1.3 <1.6',
+895 silly cache add   scope: null,
+895 silly cache add   name: 'angular-animate',
+895 silly cache add   rawSpec: '>=1.3 <1.6',
+895 silly cache add   spec: '>=1.3.0 <1.6.0',
+895 silly cache add   type: 'range' }
+896 verbose addNamed angular-animate@>=1.3.0 <1.6.0
+897 silly addNamed semver.valid null
+898 silly addNamed semver.validRange >=1.3.0 <1.6.0
+899 silly addNameRange { name: 'angular-animate',
+899 silly addNameRange   range: '>=1.3.0 <1.6.0',
+899 silly addNameRange   hasData: false }
+900 silly mapToRegistry name angular-animate
+901 silly mapToRegistry using default registry
+902 silly mapToRegistry registry https://registry.npmjs.org/
+903 silly mapToRegistry uri https://registry.npmjs.org/angular-animate
+904 verbose addNameRange registry:https://registry.npmjs.org/angular-animate not in flight; fetching
+905 verbose get https://registry.npmjs.org/angular-animate not expired, no request
+906 silly addNameRange number 2 { name: 'angular-animate',
+906 silly addNameRange   range: '>=1.3.0 <1.6.0',
+906 silly addNameRange   hasData: true }
+907 silly addNameRange versions [ 'angular-animate',
+907 silly addNameRange   [ '0.0.1',
+907 silly addNameRange     '0.0.2',
+907 silly addNameRange     '1.2.19-build.256',
+907 silly addNameRange     '1.2.16',
+907 silly addNameRange     '1.2.23',
+907 silly addNameRange     '1.3.0-rc.5',
+907 silly addNameRange     '1.3.0',
+907 silly addNameRange     '1.3.1',
+907 silly addNameRange     '1.3.2',
+907 silly addNameRange     '1.3.3',
+907 silly addNameRange     '1.3.4-build.3588',
+907 silly addNameRange     '1.2.27',
+907 silly addNameRange     '1.3.4',
+907 silly addNameRange     '1.3.5',
+907 silly addNameRange     '1.3.6',
+907 silly addNameRange     '1.3.7',
+907 silly addNameRange     '1.2.28',
+907 silly addNameRange     '1.3.8',
+907 silly addNameRange     '1.4.0-beta.0',
+907 silly addNameRange     '1.3.9',
+907 silly addNameRange     '1.3.10',
+907 silly addNameRange     '1.4.0-beta.1',
+907 silly addNameRange     '1.4.0-beta.2',
+907 silly addNameRange     '1.3.11',
+907 silly addNameRange     '1.4.0-beta.3',
+907 silly addNameRange     '1.3.12',
+907 silly addNameRange     '1.3.13',
+907 silly addNameRange     '1.4.0-beta.4',
+907 silly addNameRange     '1.3.14',
+907 silly addNameRange     '1.4.0-beta.5',
+907 silly addNameRange     '1.4.0-beta.6',
+907 silly addNameRange     '1.3.15',
+907 silly addNameRange     '1.4.0-rc.0',
+907 silly addNameRange     '1.4.0-rc.1',
+907 silly addNameRange     '1.4.0-rc.2',
+907 silly addNameRange     '1.4.0',
+907 silly addNameRange     '1.3.16',
+907 silly addNameRange     '1.4.1',
+907 silly addNameRange     '1.4.2',
+907 silly addNameRange     '1.3.17',
+907 silly addNameRange     '1.4.3',
+907 silly addNameRange     '1.4.4',
+907 silly addNameRange     '1.3.18',
+907 silly addNameRange     '1.4.5',
+907 silly addNameRange     '1.3.19',
+907 silly addNameRange     '1.4.6',
+907 silly addNameRange     '1.5.0-beta.0',
+907 silly addNameRange     '1.2.29',
+907 silly addNameRange     '1.3.20',
+907 silly addNameRange     '1.4.7',
+907 silly addNameRange     '1.5.0-beta.2',
+907 silly addNameRange     '1.4.8',
+907 silly addNameRange     '1.5.0-rc.0',
+907 silly addNameRange     '1.5.0-rc.1',
+907 silly addNameRange     '1.4.9',
+907 silly addNameRange     '1.5.0-rc.2',
+907 silly addNameRange     '1.5.0',
+907 silly addNameRange     '1.5.1',
+907 silly addNameRange     '1.4.10',
+907 silly addNameRange     '1.5.2',
+907 silly addNameRange     '1.5.3',
+907 silly addNameRange     '1.5.5',
+907 silly addNameRange     '1.4.11',
+907 silly addNameRange     '1.5.6',
+907 silly addNameRange     '1.4.12',
+907 silly addNameRange     '1.5.7',
+907 silly addNameRange     '1.2.30',
+907 silly addNameRange     '1.5.8',
+907 silly addNameRange     '1.4.13',
+907 silly addNameRange     '1.2.31',
+907 silly addNameRange     '1.2.32',
+907 silly addNameRange     '1.4.14',
+907 silly addNameRange     '1.6.0-rc.0',
+907 silly addNameRange     '1.6.0-rc.1',
+907 silly addNameRange     '1.5.9',
+907 silly addNameRange     '1.6.0-rc.2',
+907 silly addNameRange     '1.6.0',
+907 silly addNameRange     '1.5.10',
+907 silly addNameRange     '1.6.1' ] ]
+908 verbose addNamed angular-animate@1.5.10
+909 silly addNamed semver.valid 1.5.10
+910 silly addNamed semver.validRange 1.5.10
+911 silly cache afterAdd angular-aria@1.5.10
+912 verbose afterAdd /home/aakash/.npm/angular-aria/1.5.10/package/package.json not in flight; writing
+913 silly cache afterAdd angular-animate@1.5.10
+914 verbose afterAdd /home/aakash/.npm/angular-animate/1.5.10/package/package.json not in flight; writing
+915 verbose afterAdd /home/aakash/.npm/angular-aria/1.5.10/package/package.json written
+916 verbose afterAdd /home/aakash/.npm/angular-animate/1.5.10/package/package.json written
+917 silly install resolved [ { name: 'angular-aria',
+917 silly install resolved     version: '1.5.10',
+917 silly install resolved     description: 'AngularJS module for making accessibility easy',
+917 silly install resolved     main: 'index.js',
+917 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+917 silly install resolved     repository:
+917 silly install resolved      { type: 'git',
+917 silly install resolved        url: 'git+https://github.com/angular/angular.js.git' },
+917 silly install resolved     keywords:
+917 silly install resolved      [ 'angular',
+917 silly install resolved        'framework',
+917 silly install resolved        'browser',
+917 silly install resolved        'accessibility',
+917 silly install resolved        'a11y',
+917 silly install resolved        'client-side' ],
+917 silly install resolved     author:
+917 silly install resolved      { name: 'Angular Core Team',
+917 silly install resolved        email: 'angular-core+npm@google.com' },
+917 silly install resolved     license: 'MIT',
+917 silly install resolved     bugs: { url: 'https://github.com/angular/angular.js/issues' },
+917 silly install resolved     homepage: 'http://angularjs.org',
+917 silly install resolved     jspm: { shim: [Object] },
+917 silly install resolved     gitHead: '4957c958a39bfc2f2b137aff4e242638f081af23',
+917 silly install resolved     _id: 'angular-aria@1.5.10',
+917 silly install resolved     _shasum: 'e182244a6c33400cafd9e45a518b797fa660c23a',
+917 silly install resolved     _from: 'angular-aria@>=1.3.0 <1.6.0',
+917 silly install resolved     _npmVersion: '3.10.9',
+917 silly install resolved     _nodeVersion: '6.9.2',
+917 silly install resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+917 silly install resolved     dist:
+917 silly install resolved      { shasum: 'e182244a6c33400cafd9e45a518b797fa660c23a',
+917 silly install resolved        tarball: 'https://registry.npmjs.org/angular-aria/-/angular-aria-1.5.10.tgz' },
+917 silly install resolved     maintainers: [ [Object], [Object] ],
+917 silly install resolved     _npmOperationalInternal:
+917 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+917 silly install resolved        tmp: 'tmp/angular-aria-1.5.10.tgz_1481885278872_0.961054103448987' },
+917 silly install resolved     directories: {},
+917 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-aria/-/angular-aria-1.5.10.tgz',
+917 silly install resolved     readme: 'ERROR: No README data found!' },
+917 silly install resolved   { name: 'angular-animate',
+917 silly install resolved     version: '1.5.10',
+917 silly install resolved     description: 'AngularJS module for animations',
+917 silly install resolved     main: 'index.js',
+917 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+917 silly install resolved     repository:
+917 silly install resolved      { type: 'git',
+917 silly install resolved        url: 'git+https://github.com/angular/angular.js.git' },
+917 silly install resolved     keywords: [ 'angular', 'framework', 'browser', 'animation', 'client-side' ],
+917 silly install resolved     author:
+917 silly install resolved      { name: 'Angular Core Team',
+917 silly install resolved        email: 'angular-core+npm@google.com' },
+917 silly install resolved     license: 'MIT',
+917 silly install resolved     bugs: { url: 'https://github.com/angular/angular.js/issues' },
+917 silly install resolved     homepage: 'http://angularjs.org',
+917 silly install resolved     jspm: { shim: [Object] },
+917 silly install resolved     gitHead: '3f876c02d2fc6c0fd432c917d871a1e43c684a07',
+917 silly install resolved     _id: 'angular-animate@1.5.10',
+917 silly install resolved     _shasum: '7bfd4fb035ace40f9c5a22dbbd3e174ee5fa0032',
+917 silly install resolved     _from: 'angular-animate@>=1.3.0 <1.6.0',
+917 silly install resolved     _npmVersion: '3.10.9',
+917 silly install resolved     _nodeVersion: '6.9.2',
+917 silly install resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+917 silly install resolved     dist:
+917 silly install resolved      { shasum: '7bfd4fb035ace40f9c5a22dbbd3e174ee5fa0032',
+917 silly install resolved        tarball: 'https://registry.npmjs.org/angular-animate/-/angular-animate-1.5.10.tgz' },
+917 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+917 silly install resolved     _npmOperationalInternal:
+917 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+917 silly install resolved        tmp: 'tmp/angular-animate-1.5.10.tgz_1481885272978_0.6651187280658633' },
+917 silly install resolved     directories: {},
+917 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-animate/-/angular-animate-1.5.10.tgz',
+917 silly install resolved     readme: 'ERROR: No README data found!' } ]
+918 info install angular-aria@1.5.10 into /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+919 info install angular-animate@1.5.10 into /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+920 info installOne angular-aria@1.5.10
+921 verbose installOne of angular-aria to /home/aakash/Projects/NodeJS Projects/Switch/static/assets not in flight; installing
+922 info installOne angular-animate@1.5.10
+923 verbose installOne of angular-animate to /home/aakash/Projects/NodeJS Projects/Switch/static/assets not in flight; installing
+924 verbose lock using /home/aakash/.npm/_locks/angular-aria-4ebf75bfb10d67e2.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+925 error install trying to install 1.5.10 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+926 error install but already installed versions [ '1.6.1' ]
+927 verbose lock using /home/aakash/.npm/_locks/angular-animate-be27d48388ebbeee.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+928 error install trying to install 1.5.10 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+929 error install but already installed versions [ '1.6.1' ]
+930 silly install write writing angular-aria 1.5.10 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+931 silly cache addNamed cb angular-aria@1.5.10
+932 verbose unbuild node_modules/angular-aria
+933 info preuninstall angular-aria@1.6.1
+934 silly install write writing angular-animate 1.5.10 to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+935 silly cache addNamed cb angular-animate@1.5.10
+936 verbose unbuild node_modules/angular-animate
+937 info preuninstall angular-animate@1.6.1
+938 info uninstall angular-aria@1.6.1
+939 info uninstall angular-animate@1.6.1
+940 verbose unbuild rmStuff angular-aria@1.6.1 from /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules
+941 info postuninstall angular-aria@1.6.1
+942 verbose unbuild rmStuff angular-animate@1.6.1 from /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules
+943 info postuninstall angular-animate@1.6.1
+944 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria is being purged from base /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+945 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+946 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate is being purged from base /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+947 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+948 silly vacuum-fs purging /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+949 silly vacuum-fs purging /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+950 silly vacuum-fs quitting because other entries in /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules
+951 verbose tar unpack /home/aakash/.npm/angular-animate/1.5.10/package.tgz
+952 verbose tar unpacking to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+953 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate is being purged
+954 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+955 silly vacuum-fs quitting because other entries in /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules
+956 verbose tar unpack /home/aakash/.npm/angular-aria/1.5.10/package.tgz
+957 verbose tar unpacking to /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+958 silly gentlyRm /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria is being purged
+959 verbose gentlyRm don't care about contents; nuking /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+960 silly gunzTarPerm modes [ '755', '644' ]
+961 silly gunzTarPerm modes [ '755', '644' ]
+962 silly gunzTarPerm extractEntry package.json
+963 silly gunzTarPerm extractEntry package.json
+964 silly gunzTarPerm extractEntry README.md
+965 silly gunzTarPerm extractEntry angular-animate.js
+966 silly gunzTarPerm extractEntry README.md
+967 silly gunzTarPerm extractEntry angular-aria.js
+968 silly gunzTarPerm extractEntry angular-aria.min.js
+969 silly gunzTarPerm extractEntry angular-animate.min.js
+970 silly gunzTarPerm extractEntry index.js
+971 silly gunzTarPerm extractEntry LICENSE.md
+972 silly gunzTarPerm extractEntry index.js
+973 silly gunzTarPerm extractEntry LICENSE.md
+974 silly gunzTarPerm extractEntry angular-animate.min.js.map
+975 silly gunzTarPerm extractEntry angular-aria.min.js.map
+976 silly gunzTarPerm extractEntry bower.json
+977 silly gunzTarPerm extractEntry bower.json
+978 info preinstall angular-aria@1.5.10
+979 silly install resolved []
+980 verbose about to build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+981 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+982 verbose linkStuff [ false,
+982 verbose linkStuff   false,
+982 verbose linkStuff   false,
+982 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules' ]
+983 info linkStuff angular-aria@1.5.10
+984 verbose linkBins angular-aria@1.5.10
+985 verbose linkMans angular-aria@1.5.10
+986 verbose rebuildBundles angular-aria@1.5.10
+987 info install angular-aria@1.5.10
+988 info postinstall angular-aria@1.5.10
+989 verbose unlock done using /home/aakash/.npm/_locks/angular-aria-4ebf75bfb10d67e2.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-aria
+990 info preinstall angular-animate@1.5.10
+991 silly install resolved []
+992 verbose about to build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+993 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+994 verbose linkStuff [ false,
+994 verbose linkStuff   false,
+994 verbose linkStuff   false,
+994 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules' ]
+995 info linkStuff angular-animate@1.5.10
+996 verbose linkBins angular-animate@1.5.10
+997 verbose linkMans angular-animate@1.5.10
+998 verbose rebuildBundles angular-animate@1.5.10
+999 info install angular-animate@1.5.10
+1000 info postinstall angular-animate@1.5.10
+1001 verbose unlock done using /home/aakash/.npm/_locks/angular-animate-be27d48388ebbeee.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-animate
+1002 verbose unlock done using /home/aakash/.npm/_locks/angular-material-0f34185e02c65520.lock for /home/aakash/Projects/NodeJS Projects/Switch/static/assets/node_modules/angular-material
+1003 info build /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+1004 verbose linkStuff [ false,
+1004 verbose linkStuff   false,
+1004 verbose linkStuff   false,
+1004 verbose linkStuff   '/home/aakash/Projects/NodeJS Projects/Switch/static' ]
+1005 info linkStuff Frontend@1.0.0
+1006 verbose linkBins Frontend@1.0.0
+1007 verbose linkMans Frontend@1.0.0
+1008 verbose rebuildBundles Frontend@1.0.0
+1009 verbose rebuildBundles [ 'angular',
+1009 verbose rebuildBundles   'angular-animate',
+1009 verbose rebuildBundles   'angular-aria',
+1009 verbose rebuildBundles   'angular-material',
+1009 verbose rebuildBundles   'angular-ui-router' ]
+1010 info install Frontend@1.0.0
+1011 info postinstall Frontend@1.0.0
+1012 info prepublish Frontend@1.0.0
+1013 verbose stack Error: The package angular does not satisfy its siblings' peerDependencies requirements!
+1013 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+1013 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:264:7
+1013 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+1013 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1013 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1013 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1013 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:27:18)
+1013 verbose stack     at next (/usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:222:5)
+1013 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:175:7
+1013 verbose stack     at LOOP (evalmachine.<anonymous>:1474:14)
+1014 verbose cwd /home/aakash/Projects/NodeJS Projects/Switch/static/assets
+1015 error Linux 4.2.0-42-generic
+1016 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+1017 error node v0.12.2
+1018 error npm  v2.7.4
+1019 error code EPEERINVALID
+1020 error peerinvalid The package angular does not satisfy its siblings' peerDependencies requirements!
+1020 error peerinvalid Peer angular-material@1.1.1 wants angular@>=1.3 <1.6
+1021 verbose exit [ 1, true ]

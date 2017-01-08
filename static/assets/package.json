@@ -1,0 +1,11 @@
+{
+	"name":"Frontend",
+	"version":"1.0.0",
+	"dependencies":{
+		"angular":"^1.4.7",
+		"angular-ui-router":"latest",
+		"angular-material":"~1.1.0",
+		"angular-animate":"latest",
+		"angular-aria":"latest"
+	}
+}
