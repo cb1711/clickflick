@@ -4,6 +4,8 @@ var path = require("path");
 var events = require('events');
 var eventEmitter = new events.EventEmitter();
 var bodyParser = require("body-parser");
+var childProcess = require("child_process");        //Child process
+var spawn = childProcess.spawn;     //Child process spawned
 
 // ============== Constants ====================================================
 var PORT = 5000;
@@ -45,6 +47,15 @@ eventEmitter.on('bluetoothTrigger',function(arg){
     // console.log("Switch2:"+arg.data.switch2);
     // console.log("Switch3:"+arg.data.switch3);
     // console.log("Switch4:"+arg.data.switch4);
+
+    // Spawing java class to deal with bluetooth hardware
+    var child = spawn('java',['-cp','./java_code','Driver']);
+    child.stdout.on('data',function(data){
+        console.log(data.toString());
+    });
+    child.on('close',function(code){
+        console.log("Child returned with status code:",code);
+    });
 });
 // =============================================================================
 

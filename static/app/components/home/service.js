@@ -3,7 +3,7 @@ service('homeService',function($http){
     var flip = function(data){
         return $http({
 			method:'POST',
-			url:"http://192.168.1.4:5000/switchFlick",
+			url:"http://127.0.0.1:5000/switchFlick",
 			data:{data:data},
 			})
 			.then(function(response){
@@ -14,7 +14,7 @@ service('homeService',function($http){
     };
 
     var inititate = function(){
-        return $http.get("http://192.168.1.4:5000/State");
+        return $http.get("http://127.0.0.1:5000/State");
     };
 
     return {
