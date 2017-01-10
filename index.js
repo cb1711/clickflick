@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 var path = require("path");
 var events = require('events');
+var fs = require('fs');
 var eventEmitter = new events.EventEmitter();
 var bodyParser = require("body-parser");
 var childProcess = require("child_process");        //Child process
@@ -9,12 +10,6 @@ var spawn = childProcess.spawn;     //Child process spawned
 
 // ============== Constants ====================================================
 var PORT = 5000;
-var Data = {
-    switch1:false,
-    switch2:false,
-    switch3:false,
-    switch4:false,
-};
 // =============================================================================
 
 // =============== Middle wares ================================================
@@ -42,20 +37,21 @@ for (var k in interfaces) {
 
 // ================= Bluetooth Event ===========================================
 eventEmitter.on('bluetoothTrigger',function(arg){
-    console.log("triggered");
-    // console.log("Switch1:"+arg.data.switch1);
-    // console.log("Switch2:"+arg.data.switch2);
-    // console.log("Switch3:"+arg.data.switch3);
-    // console.log("Switch4:"+arg.data.switch4);
+    data = JSON.stringify(arg.data.data);
     // Spawing java class to deal with bluetooth hardware
     var child = spawn('java',['-cp','./java_code','Driver']);
-    child.stdin.write("1\n");
+    child.stdin.write(data+"\n");
     // child.stdout.on('data',function(data){
     //     console.log(data.toString().trim());
     // });
     child.stdout.pipe(process.stdout);
     child.on('close',function(code){
-        console.log("Child returned with status code:",code);
+        fs.writeFile('./data.txt',data,function(err){
+            if(err){
+                console.log("Error while writing file. Aborting!!");
+            }
+        });
+        console.log("Java snippet ran successfully with exit code ",code);
     });
 });
 // =============================================================================
@@ -71,15 +67,15 @@ router.get('/',function(req,res){
 // Route 2
 router.post('/switchFlick',function(req,res){
     // Emit event to execute java function
-    console.log(req.body);
     res.send(req.body);
     eventEmitter.emit('bluetoothTrigger',{data:req.body});
-    console.log("Switch flicked");
 });
 
 // Route 3
 router.get('/State',function(req,res){
-    res.send(Data);
+    fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,data){
+        res.send(JSON.stringify(eval("(" + data + ")")));
+    });
 });
 // =============================================================================
 

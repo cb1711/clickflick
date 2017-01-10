@@ -12,6 +12,7 @@ controller('homeController',function($scope,homeService){
     // Ask for switch state from pi using get request
     homeService.inititate().then(
         function(response){
+            console.log(response.data);
             $scope.state = {
                 switch1:response.data.switch1,
                 switch2:response.data.switch1,
