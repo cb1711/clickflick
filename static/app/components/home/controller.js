@@ -13,12 +13,11 @@ controller('homeController',function($scope,homeService){
     homeService.inititate().then(
         function(response){
             console.log(response.data);
-            $scope.state = {
-                switch1:response.data.switch1,
-                switch2:response.data.switch1,
-                switch3:response.data.switch1,
-                switch4:response.data.switch1,
-            };
+            $scope.state.switch1=response.data.switch1;
+            $scope.state.switch2=response.data.switch2;
+            $scope.state.switch3=response.data.switch3;
+            $scope.state.switch4=response.data.switch4;
+            console.log($scope.state);
         },
         function(err){
             console.log("Error encountered");
@@ -28,12 +27,11 @@ controller('homeController',function($scope,homeService){
     $scope.switchClicked = function(state){
         homeService.flip(state).then(
             function(response){
-                $scope.state = {
-                    switch1:response.data.data.switch1,
-                    switch2:response.data.data.switch2,
-                    switch3:response.data.data.switch3,
-                    switch4:response.data.data.switch4,
-                };
+                $scope.state.switch1=response.data.switch1;
+                $scope.state.switch2=response.data.switch2;
+                $scope.state.switch3=response.data.switch3;
+                $scope.state.switch4=response.data.switch4;
+                console.log($scope.state);
             },
             function(err){
                 console.log("Error encountered");

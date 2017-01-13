@@ -6,6 +6,7 @@
 		"angular-ui-router":"latest",
 		"angular-material":"~1.1.0",
 		"angular-animate":"latest",
-		"angular-aria":"latest"
+		"angular-aria":"latest",
+		"socket.io":"latest"
 	}
 }

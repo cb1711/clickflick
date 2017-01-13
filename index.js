@@ -7,6 +7,8 @@ var eventEmitter = new events.EventEmitter();
 var bodyParser = require("body-parser");
 var childProcess = require("child_process");        //Child process
 var spawn = childProcess.spawn;     //Child process spawned
+var http = require('http').Server(app);   //We will use seperate http server so that we can superimpose socket listener on it
+var io = require('socket.io')(http);    //Placing socket on the http server object
 
 // ============== Constants ====================================================
 var PORT = 5000;
@@ -39,19 +41,25 @@ for (var k in interfaces) {
 eventEmitter.on('bluetoothTrigger',function(arg){
     data = JSON.stringify(arg.data.data);
     // Spawing java class to deal with bluetooth hardware
-    var child = spawn('java',['-cp','./java_code','Driver']);
+    var child = spawn('java',['-jar','./jar/bluetoothSwitch.jar']);
     child.stdin.write(data+"\n");
     // child.stdout.on('data',function(data){
     //     console.log(data.toString().trim());
     // });
-    child.stdout.pipe(process.stdout);
+    // child.stdout.pipe(process.stdout);
+
+    // Feedback chain start when the java process closes
     child.on('close',function(code){
         fs.writeFile('./data.txt',data,function(err){
             if(err){
                 console.log("Error while writing file. Aborting!!");
             }
+            else{
+                fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,data){
+                    eventEmitter.emit('feedback',data);
+                });
+            }
         });
-        console.log("Java snippet ran successfully with exit code ",code);
     });
 });
 // =============================================================================
@@ -67,8 +75,11 @@ router.get('/',function(req,res){
 // Route 2
 router.post('/switchFlick',function(req,res){
     // Emit event to execute java function
-    res.send(req.body);
     eventEmitter.emit('bluetoothTrigger',{data:req.body});
+    // When positive feedback is recieved
+    eventEmitter.on('feedback',function(data){
+        res.send(JSON.stringify(eval("(" + data + ")")));
+    });
 });
 
 // Route 3
@@ -80,5 +91,8 @@ router.get('/State',function(req,res){
 // =============================================================================
 
 app.use('',router);
+// http.listen(3000, function(){
+//   console.log("Listening for request on "+addresses+":"+PORT);
+// });
 app.listen(PORT);
 console.log("Listening for request on "+addresses+":"+PORT);
