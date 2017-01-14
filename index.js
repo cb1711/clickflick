@@ -43,20 +43,24 @@ eventEmitter.on('bluetoothTrigger',function(arg){
     // Spawing java class to deal with bluetooth hardware
     var child = spawn('java',['-jar','./jar/bluetoothSwitch.jar']);
     child.stdin.write(data+"\n");
-    // child.stdout.on('data',function(data){
-    //     console.log(data.toString().trim());
-    // });
+    feedback = '';
+    child.stdout.on('data',function(chunk){
+        console.log(chunk);
+        feedback = feedback+chunk;
+    });
     // child.stdout.pipe(process.stdout);
 
     // Feedback chain start when the java process closes
     child.on('close',function(code){
-        fs.writeFile('./data.txt',data,function(err){
+        feedback = feedback.trim();     //Feedback is the data we are recieving from JAR file
+        console.log(feedback);
+        fs.writeFile('./data.txt',feedback,function(err){
             if(err){
                 console.log("Error while writing file. Aborting!!");
             }
             else{
-                fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,data){
-                    eventEmitter.emit('feedback',data);
+                fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,feedback){
+                    eventEmitter.emit('feedback',feedback);
                 });
             }
         });
