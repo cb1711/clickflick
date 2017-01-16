@@ -52,7 +52,7 @@ eventEmitter.on('bluetoothTrigger',function(arg){
     // Feedback chain start when the java process closes
     child.on('close',function(code){
         feedback = feedback.trim();     //Feedback is the data we are recieving from JAR file
-        console.log(feedback);
+        // console.log(feedback);
         fs.writeFile('./data.txt',feedback,function(err){
             if(err){
                 console.log("Error while writing file. Aborting!!");
@@ -96,10 +96,13 @@ router.get('/State',function(req,res){
 // ============================ Socket object ==================================
 io.on('connection',function(socket){
   console.log("User connected");
+  fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,data){
+      socket.emit('init',JSON.stringify(eval("(" + data + ")")));
+  });
   socket.on('stateChanged',function(data){
     // socket.broadcast.emit();
-    console.log("hit");
-    io.emit('stateChanged',data);
+    console.log(data);
+    io.emit('newState',data);
   });
   socket.on('disconnect',function(){
     console.log("user disconnected");
@@ -108,7 +111,13 @@ io.on('connection',function(socket){
 // =============================================================================
 app.use('',router);
 http.listen(PORT, function(){
-  console.log("Listening for request on "+addresses+":"+PORT);
+  if(addresses == ''){
+    console.log("Listening for request on "+"127.0.0.1"+":"+PORT);
+  }
+  else{
+    console.log("Listening for request on "+addresses+":"+PORT);
+  }
+
 });
 // app.listen(PORT);
 // console.log("Listening for request on "+addresses+":"+PORT);
