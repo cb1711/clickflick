@@ -1,5 +1,8 @@
 angular.module('home').
-service('homeService',function($http){
+service('homeService',function($http,$q){
+
+    var socket = io();
+
     var flip = function(data){
         return $http({
 			method:'POST',
@@ -17,8 +20,18 @@ service('homeService',function($http){
         return $http.get("http://127.0.0.1:5000/State");
     };
 
+    var on = function(event,callback){
+        socket.on(event,callback);
+    };
+
+    var emit = function(event,data){
+        socket.emit(event,data);
+    };
+
     return {
         flip:flip,
-        inititate:inititate
+        inititate:inititate,
+        on:on,
+        emit:emit
     };
 });

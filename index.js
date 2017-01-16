@@ -45,7 +45,6 @@ eventEmitter.on('bluetoothTrigger',function(arg){
     child.stdin.write(data+"\n");
     feedback = '';
     child.stdout.on('data',function(chunk){
-        console.log(chunk);
         feedback = feedback+chunk;
     });
     // child.stdout.pipe(process.stdout);
@@ -94,9 +93,22 @@ router.get('/State',function(req,res){
 });
 // =============================================================================
 
+// ============================ Socket object ==================================
+io.on('connection',function(socket){
+  console.log("User connected");
+  socket.on('stateChanged',function(data){
+    // socket.broadcast.emit();
+    console.log("hit");
+    io.emit('stateChanged',data);
+  });
+  socket.on('disconnect',function(){
+    console.log("user disconnected");
+  });
+});
+// =============================================================================
 app.use('',router);
-// http.listen(3000, function(){
-//   console.log("Listening for request on "+addresses+":"+PORT);
-// });
-app.listen(PORT);
-console.log("Listening for request on "+addresses+":"+PORT);
+http.listen(PORT, function(){
+  console.log("Listening for request on "+addresses+":"+PORT);
+});
+// app.listen(PORT);
+// console.log("Listening for request on "+addresses+":"+PORT);
