@@ -1,9 +1,10 @@
 {
-	"name":"switch-server",
-	"main":"index.js",
-	"dependencies":{
-		"express":"~4.0.0",
-		"body-parser":"~1.0.1",
-		"socket.io":"latest"
-	}
+  "name": "switch-server",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "cors": "^2.8.1",
+    "express": "~4.0.0",
+    "socket.io": "latest"
+  }
 }

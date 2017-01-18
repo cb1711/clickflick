@@ -9,6 +9,8 @@ var childProcess = require("child_process");        //Child process
 var spawn = childProcess.spawn;     //Child process spawned
 var http = require('http').Server(app);   //We will use seperate http server so that we can superimpose socket listener on it
 var io = require('socket.io')(http);    //Placing socket on the http server object
+var cors = require('cors');      //Enable cors
+io.set('origins', '*:*');
 
 // ============== Constants ====================================================
 var PORT = 5000;
@@ -16,6 +18,7 @@ var PORT = 5000;
 
 // =============== Middle wares ================================================
 // Path to look for static files
+app.use(cors());        //Using cors as a middleware
 app.use(express.static('./static'));        //The relative path in which the statics requests are done depends on this path
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -70,6 +73,11 @@ eventEmitter.on('bluetoothTrigger',function(arg){
 var router = express.Router();
 
 // ================ Routes =====================================================
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
 // Route 1
 router.get('/',function(req,res){
     res.sendfile(path.join(__dirname,"/static/index.html"));
@@ -78,26 +86,28 @@ router.get('/',function(req,res){
 // Route 2
 router.post('/switchFlick',function(req,res){
     // Emit event to execute java function
+    console.log(req.body);
     eventEmitter.emit('bluetoothTrigger',{data:req.body});
     // When positive feedback is recieved
     eventEmitter.on('feedback',function(data){
-        res.send(JSON.stringify(eval("(" + data + ")")));
+        console.log(data);
+        res.send(JSON.parse(data));
     });
 });
 
 // Route 3
-router.get('/State',function(req,res){
-    fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,data){
-        res.send(JSON.stringify(eval("(" + data + ")")));
-    });
-});
+// router.get('/State',function(req,res){
+//     fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,data){
+//         res.send(JSON.parse(data));
+//     });
+// });
 // =============================================================================
 
 // ============================ Socket object ==================================
 io.on('connection',function(socket){
   console.log("User connected");
   fs.readFile('./data.txt',{encoding: 'utf-8'},function(err,data){
-      socket.emit('init',JSON.stringify(eval("(" + data + ")")));
+      socket.emit('init',JSON.parse(data));
   });
   socket.on('stateChanged',function(data){
     // socket.broadcast.emit();

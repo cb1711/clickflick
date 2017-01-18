@@ -13,40 +13,46 @@ controller('homeController',function($scope,homeService){
     var lastState;
 
     // Ask for switch state from pi using get request
-    homeService.inititate().then(
-        function(response){
-            $scope.state.switch1=response.data.switch1;
-            $scope.state.switch2=response.data.switch2;
-            $scope.state.switch3=response.data.switch3;
-            $scope.state.switch4=response.data.switch4;
-
-            lastState = JSON.parse(JSON.stringify( $scope.state ));
-        },
-        function(err){
-            console.log("Error encountered");
-        }
-    );
+    // homeService.inititate().then(
+    //     function(response){
+    //         $scope.state.switch1=response.data.switch1;
+    //         $scope.state.switch2=response.data.switch2;
+    //         $scope.state.switch3=response.data.switch3;
+    //         $scope.state.switch4=response.data.switch4;
+    //
+    //         lastState = JSON.parse(JSON.stringify( $scope.state ));
+    //     },
+    //     function(err){
+    //         console.log("Error encountered");
+    //     }
+    // );
 
     homeService.on('init',function(data){
         console.log(data);
-        // $scope.state.switch1=data.switch1;
-        // $scope.state.switch2=data.switch2;
-        // $scope.state.switch3=data.switch3;
-        // $scope.state.switch4=data.switch4;
+        $scope.$apply(function(){
+            $scope.state.switch1=data.switch1;
+            $scope.state.switch2=data.switch2;
+            $scope.state.switch3=data.switch3;
+            $scope.state.switch4=data.switch4;
+        });
+        lastState = JSON.parse(JSON.stringify( $scope.state ));
     });
 
     // Socket object to get data when some other user changes the data
     homeService.on('newState',function(data){
         // console.log(data);
-        $scope.state.switch1=data.switch1;
-        $scope.state.switch2=data.switch2;
-        $scope.state.switch3=data.switch3;
-        $scope.state.switch4=data.switch4;
+        $scope.$apply(function(){
+            $scope.state.switch1=data.switch1;
+            $scope.state.switch2=data.switch2;
+            $scope.state.switch3=data.switch3;
+            $scope.state.switch4=data.switch4;
+        });
     });
 
     $scope.switchClicked = function(state){
         homeService.flip(state).then(
             function(response){
+                console.log(response);
                 var flag = true;
                 // Check if the data has actually changed (if not dont send socket msg to save bandwidth)
                 if(lastState.switch1==response.data.switch1 && lastState.switch2==response.data.switch2 && lastState.switch3==response.data.switch3 && lastState.switch4==response.data.switch4){
