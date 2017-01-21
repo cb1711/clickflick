@@ -1,12 +1,12 @@
 angular.module('home').
-service('homeService',function($http,$q){
+service('homeService',function($http,$q,config){
 
     var socket = io();
 
     var flip = function(data){
         return $http({
 			method:'POST',
-			url:"http://192.168.0.106:5000/switchFlick",
+			url:config.apiURL+"/switchFlick",
 			data:{data:data},
 			})
 			.then(function(response){
