@@ -1,1 +1,1 @@
-{"switch1":false,"switch2":true,"switch3":false,"switch4":false}
+{"switch1":false,"switch2":true,"switch3":true,"switch4":false}

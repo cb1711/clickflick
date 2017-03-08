@@ -45,6 +45,7 @@ eventEmitter.on('bluetoothTrigger',function(arg){
     data = JSON.stringify(arg.data.data);
     // Spawing java class to deal with bluetooth hardware
     var child = spawn('java',['-jar','./jar/bluetoothSwitch.jar']);
+    console.log(data);
     child.stdin.write(data+"\n");
     feedback = '';
     child.stdout.on('data',function(chunk){
