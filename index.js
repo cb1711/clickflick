@@ -44,7 +44,7 @@ for (var k in interfaces) {
 eventEmitter.on('bluetoothTrigger',function(arg){
     data = JSON.stringify(arg.data.data);
     // Spawing java class to deal with bluetooth hardware
-    var child = spawn('java',['-jar','./jar/bluetoothSwitch.jar']);
+    var child = spawn('python',['./python_files/bluetest.py']);
     console.log(data);
     child.stdin.write(data+"\n");
     feedback = '';
